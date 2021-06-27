@@ -1,0 +1,1023 @@
+.admin-content {
+    margin: 30px;
+}
+
+.section-statistik-dashboard {
+    margin-top: 20px;
+}
+.section-card-dashboard {
+    margin-top: 10px;
+}
+#card-outline-dashboard {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#card-outline-judul {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+}
+.section-tittle {
+    color: grey;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.table > thead > tr > th {
+    vertical-align: middle;
+}
+
+.title-subtitle > p {
+    margin: 0;
+}
+.section-table {
+    margin-top: 10px;
+}
+.section-card {
+    margin-top: 25px;
+}
+
+.dropdown .dropdown-me {
+    padding-left: 10px;
+}
+
+.table > tbody > tr > td > .dropdown {
+    text-align: center;
+}
+
+.table > tbody > tr > td > .custom-switch {
+    align-items: center;
+}
+.custom-control .custom-checkbox .coba {
+    margin-bottom: 100px;
+}
+
+#button_simpan {
+    margin-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: auto;
+}
+
+#button_kembali {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 2px;
+    margin-right: 10px;
+}
+select #jeniskm option[value="kmluar"] {
+    background-image: url(/public/icon/Bathtub.svg);
+}
+
+/* .area {
+    border: 2px dashed #BDBDBD;
+    width: 150px;
+    height: 150px;
+}
+#dropZone {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 55px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #f2f2f2;
+    color: #bbb;
+} */
+
+.box {
+    margin-top: 10px;
+    position: relative;
+    background: #ffffff;
+    width: 150px;
+    height: auto;
+}
+
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.box-tools {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.dropzone-wrapper {
+    border: 2px dashed #91b0b3;
+    color: #92b0b3;
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.dropzone-desc {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 40%;
+    top: 60px;
+    font-size: 16px;
+}
+
+.dropzone,
+.dropzone:focus {
+    position: absolute;
+    outline: none !important;
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.dropzone-wrapper:hover,
+.dropzone-wrapper.dragover {
+    background: #ecf0f5;
+}
+
+.preview-zone {
+    /* height: 150px; */
+    width: 150px;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.preview-zone .box {
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.display-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.center-cropped {
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.center-cropped img {
+    min-height: 100%;
+    min-width: 100%;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 5-7 */
+    filter: alpha(opacity=100);
+    /* modern browsers */
+    opacity: 100;
+}
+.apapundeh {
+    width: 150px;
+    height: 150px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-line-navbar {
+    border-left: 1.5px solid grey;
+    height: 38px;
+    position: relative;
+    left: 50%;
+    opacity: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.search-navbar {
+    width: 320px;
+    position: absolute;
+    margin-left: auto;
+}
+.container-navbar {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.content-user {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1000px) {
+    .content-user {
+        margin-top: 90px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+@media (min-width: 1500px) {
+    .content-user {
+        margin-top: 90px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+.row-filter {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#section-card-user {
+    border-radius: 10px;
+    max-width: 316px;
+}
+
+.judul-halaman {
+    margin-bottom: 20px;
+}
+
+#card-jeniskamar {
+    max-width: 200px;
+    height: 405px;
+    border-radius: 10px;
+    /* margin-left: 30px; */
+}
+#cardtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.card-divider {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    border-top: 1px solid #e3e7ed;
+    margin-bottom: 10px;
+}
+
+/* .row-jeniskamar{
+    display: inline-flex;
+} */
+.col-jeniskamar-filter {
+    /* margin-right: 30px; */
+    max-width: 316px;
+    margin-bottom: 30px;
+}
+.col-jeniskamar-card {
+    /* display: flex; */
+    /* max-width: 500px; */
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+#col-card-jeniskamar {
+    margin-left: 50px;
+}
+@media (min-width: 1500px) {
+    .col-jeniskamar-card {
+        /* max-width: 1000px; */
+        margin-bottom: 30px;
+        /* margin-left: 20px; */
+    }
+}
+@media (max-width: 575.98px) {
+    .col-jeniskamar-filter {
+        /* margin-top: 90px; */
+        /* margin-left: 20px; */
+        margin-bottom: 20px;
+    }
+    #card-jeniskamar {
+        max-width: 165px;
+        /* margin-right: 0; */
+    }
+    #col-card-jeniskamar {
+        margin-left: 5px;
+    }
+    .col-jeniskamar-card {
+        margin-right: 5px;
+    }
+}
+.detail-jeniskamar {
+    margin-top: 30px;
+}
+
+/* Images detail jenis kamar */
+
+#card-images {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+fieldset.active {
+    display: block !important;
+}
+
+fieldset {
+    display: none;
+}
+
+.pic0 {
+    width: 360px;
+    height: 360px;
+    margin-bottom: 88px;
+    margin-top: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.product-pic {
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.thumbnails {
+    position: absolute;
+    bottom: 20px;
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.tb {
+    width: 68px;
+    height: 68px;
+    border: 1px solid grey;
+    margin: 2px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.tb-active {
+    opacity: 1;
+}
+
+.thumbnail-img {
+    width: 66px;
+    height: 66px;
+    object-fit: cover;
+}
+.judul-jeniskamar {
+    margin-bottom: 5px;
+    font-size: 36px;
+}
+.harga-jeniskamar {
+    font-size: 24px;
+}
+#card-rincianpemesanan {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 15px;
+}
+.pil-rincianpemesanan {
+    margin-bottom: 10px;
+}
+.judul-rincianpemesanan {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.harga-rincianpemesanan {
+    font-size: 32px;
+    margin-top: 0;
+}
+.totalharga-rp {
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+@media screen and (max-width: 768px) {
+    .pic0 {
+        width: 300px;
+        height: 300px;
+    }
+    .tb {
+        width: 56px;
+        height: 56px;
+        border: 1px solid grey;
+        margin: 2px;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+    .thumbnail-img {
+        width: 54px;
+        height: 54px;
+    }
+    .judul-jeniskamar {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .harga-jeniskamar {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1500px) and (max-width: 2000px) {
+    .pic0 {
+        width: 500px;
+        height: 500px;
+        margin-bottom: 114px;
+        margin-top: auto;
+        display: block;
+        object-fit: cover;
+    }
+    .tb {
+        width: 94px;
+        height: 94px;
+        border: 1px solid grey;
+        margin: 2px;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+    .thumbnail-img {
+        width: 94px;
+        height: 94px;
+        object-fit: cover;
+    }
+}
+
+/* Sampe sini buat images detail jenis kamar */
+
+.margin-section {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#card-checkout {
+    border-radius: 15px;
+    max-width: 1200px;
+    padding: 30px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+@media (min-width: 1500px) and (max-width: 2000px) {
+    #card-checkout {
+        border-radius: 15px;
+        max-width: 1800px;
+        padding: 30px;
+        padding-top: 20px;
+        margin-bottom: 100px;
+    }
+}
+
+.judul-section {
+    margin-bottom: 10px;
+}
+#card-metodepembayaran {
+    width: 360px;
+    padding: 20px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#card-ringkasanpemesanan {
+    width: 360px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 5px;
+}
+.tombol {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.img-ringkasanpemesanan {
+    border-radius: 5px;
+    margin-right: 15px;
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+}
+
+.judul-ringkasanpemesanan {
+    font-size: 18px;
+    font-weight: 500;
+}
+.jeniskamar-ringkasanpemesanan {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.isi-ringkasanpemesanan {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.harga-ringkasanpemesanan {
+    font-size: 32px;
+}
+.judul-halaman-checkout {
+    margin-bottom: 5px;
+}
+
+.logo-navbar {
+    margin-top: 3px;
+    height: 36px;
+    width: auto;
+    margin-right: 30px;
+}
+
+.btn.btn-disable {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #000;
+}
+
+/* tambah css loader */
+.blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: #00000085;
+    z-index: 1000;
+    overflow: auto;
+    text-align: center;
+}
+
+/* loader custom */
+.loader {
+    width: 12%;
+    height: 10%;
+    margin: 400px auto;
+    background-color: transparent;
+    padding: 10px;
+}
+.loader .loader-inner {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+}
+.loader .loader-inner div {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform-origin: 20px 20px;
+    -webkit-animation: loading-14 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+    animation: loading-14 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+}
+.loader .loader-inner .box-2 {
+    top: 10px;
+    left: auto;
+    right: 10px;
+    transform-origin: -4px 20px;
+    -webkit-animation: loading-142 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+    animation: loading-142 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+}
+.loader .loader-inner .box-3 {
+    top: auto;
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+    transform-origin: -4px -4px;
+    -webkit-animation: loading-143 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+    animation: loading-143 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+}
+.loader .loader-inner .box-4 {
+    top: auto;
+    bottom: 10px;
+    transform-origin: 20px -4px;
+    -webkit-animation: loading-144 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+    animation: loading-144 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
+}
+.loader .text {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+@-webkit-keyframes loading-14 {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-14 {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading-142 {
+    0%,
+    25% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-142 {
+    0%,
+    25% {
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading-143 {
+    0%,
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-143 {
+    0%,
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading-144 {
+    0%,
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100%,
+    75% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-144 {
+    0%,
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100%,
+    75% {
+        transform: rotate(360deg);
+    }
+}
+
+.nama-nrp > p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.datadiri-lengkap > p {
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: #828282;
+}
+
+select#metodepembayaran option[value="bni-va"] {
+    background-image: url('{{asset("assets/img/asramaits_1.png")}}');
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder:active {
+    background: #fff !important;
+    color: #000 !important;
+    border-color: #999;
+}
+
+/* Card Check */
+label {
+    /* width: 100%; */
+    font-size: 12px;
+    text-align: left;
+    align-items: center;
+    display: block;
+    line-height: 16px;
+}
+
+.card-input-element + .card {
+    width: 156px;
+    height: calc(32px + 2 * 1rem);
+    color: #4f4f4f;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.card-input-element + .card:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked + .card {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    -webkit-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    transition: border 0.3s;
+    font-weight: 600;
+}
+/* 
+.card-input-element:checked + .card::after {
+    content: "\e5ca";
+    color: #013880;
+    font-family: "Material Icons";
+    display: inline;
+    font-size: 24px;
+    -webkit-animation-name: fadeInCheckbox;
+    animation-name: fadeInCheckbox;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+@-webkit-keyframes fadeInCheckbox {
+    from {
+        opacity: 0;
+        -webkit-transform: rotateZ(-20deg);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: rotateZ(0deg);
+    }
+}
+
+@keyframes fadeInCheckbox {
+    from {
+        opacity: 0;
+        transform: rotateZ(-20deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+
+.img-metodepembayaran {
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 60px;
+    /* height: 24px; */
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+#pilih-metode {
+    padding-top: 15px;
+}
+/* End Card Check */
+
+.selesaikan-pembayaran {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 10px;
+}
+.img-selesaikanpembayaran {
+    width: 75px;
+    height: auto;
+    margin-right: 10px;
+    /* margin-bottom: 10px; */
+    margin-top: -13px;
+}
+.section-detailpembayaran {
+    margin-top: 20px;
+}
+.label-detailpembayaran {
+    font-size: 16px;
+    color: #828282;
+}
+.isi-detailpembayaran {
+    font-size: 18px;
+    color: #000000;
+}
+.selesaikandalam {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ef7407;
+}
+.total-detailpembayaran {
+    margin-top: 30px;
+    font-size: 32px;
+}
+#card-petunjukpembayaran {
+    width: 500px;
+    padding: 30px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.section-buttonlihatpemesanan {
+    margin-top: 50px;
+}
+
+#salinVA {
+    color: primary;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#card-detailpembayaran {
+    border-radius: 15px;
+    width: 500px;
+    padding: 30px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+#checkbox-persetujuan {
+    margin-top: 20px;
+}
+#card-pesanan {
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+#card-isipesanan {
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+#header-card-isipesanan {
+    font-size: 16px;
+    color: #333;
+}
+
+.card-divider-pesanan {
+    height: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    overflow: hidden;
+    border-top: 1px solid #e3e7ed;
+    margin-bottom: 10px;
+}
+#card-body-pesanan p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: lighter;
+    color: #828282;
+}
+
+#card-body-pesanan {
+    margin-left: -10px;
+}
+#card-footer-pesanan {
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
+}
+#myTab {
+    font-size: 16px;
+}
+#card-detailpesanan {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#card-detailpesanan p {
+    margin-bottom: 5px;
+    font-weight: lighter;
+    color: #828282;
+}
+
+#card-detailpesanan #isi-section-detailpemesanan {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    max-width: 250px;
+}
+#card-detailpesanan #isi-section-detailpemesanan2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+}
+
+#welcomeasrama-margin {
+    width: 100%;
+    margin: 0 auto;
+    /* height: 800px; */
+    /* border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px); */
+    object-fit: cover;
+    object-position: center;
+}
+
+#judul-layanan-asrama {
+    color: #444;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.layanan-asrama {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.modal-footer-keluar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.modal-footer-keluar button {
+    width: 110px;
+}
+.modal-footer-keluar a {
+    width: 110px;
+}
+#gambar-laundry{
+    border-radius: 5px;
+    width: 525px;
+    height: 350px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-top: auto;
+    display: block;
+    object-fit: cover;
+
+}
+
+#isi-layananasrama{
+    margin-top: 30px;
+}
+
+.tab-layanan{
+    max-width: 1200px;
+}
+#icon-layananasrama{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* object-fit: cover; */
+}
+
+#card-layananasrama{
+    border-radius: 10px;
+    padding: 25px;
+    height: 230px;
+}
