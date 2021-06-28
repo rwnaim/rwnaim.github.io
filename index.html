@@ -19,8 +19,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js -->
 
+    <!-- Animasi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Meta -->
     <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
@@ -78,7 +79,8 @@
             </div>
             <div class="navbar-right">
                 <div class="dropdown dropdown-profile">
-                    <a href="#modalLogin" class="btn btn-primary" data-toggle="modal"><i data-feather="log-in"></i><span> Masuk</span>
+                    <a href="#modalLogin" class="btn btn-primary" data-toggle="modal"><i
+                            data-feather="log-in"></i><span> Masuk</span>
                     </a>
                 </div>
             </div>
@@ -89,8 +91,8 @@
             <div class="modal-content">
                 <div class="modal-body pd-20 pd-sm-30">
                     <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
 
                     <div class="d-sm-flex justify-content-lg-center">
                         <h2 style="text-align: center;">Masuk Akun</h2>
@@ -100,7 +102,8 @@
 
                             <p class="tx-color-03 tx-14" style="text-align: center;">Anda harus sudah terdaftar terlebih dahulu sebagai Mahasiswa Institut Teknologi Sepuluh Nopember. </p>
                             <br>
-                            <a href="asrama.html" class="btn btn-brand-02 horizontal-center tx-medium" style="max-width: 250px;"><img style="max-width: 12%; margin-right: 10px;" src="assets/img/ITS_white-bold.png"><span class="align-items-baseline">Masuk dengan myITS</span></a>
+                            <a href="asrama.html" class="btn btn-brand-02 horizontal-center tx-medium" style="max-width: 250px;"><img style="max-width: 12%; margin-right: 10px;" src="assets/img/ITS_white-bold.png"><span class="align-items-baseline">Masuk dengan
+                                    myITS</span></a>
                         </div>
                     </div>
                 </div>
@@ -109,15 +112,15 @@
         <!-- modal-dialog -->
     </div>
     <!-- modal -->
-    <div class="carousel slide" data-ride="carousel" id="welcomeasrama-margin">
+    <div class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#welcomeAsrama" data-slide-to="0" class="active"></li>
             <li data-target="#welcomeAsrama" data-slide-to="1"></li>
             <li data-target="#welcomeAsrama" data-slide-to="2"></li>
         </ol>
 
-        <div class="carousel-inner" id="welcomeAsrama">
-            <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-inner">
+            <div class="carousel-caption d-none d-md-block" data-inviewport="fade-left">
                 <h1 style="color: #FFF; font-size:52px; margin-bottom:20px;">Asrama Mahasiswa ITS</h1>
                 <p style="font-size: 16px;">Merupakan fasilitas hunian sewa yang disediakan bagi mahasiswa untuk tinggal selama masa studi di ITS Surabaya. Di bawah pengelolaan Direktorat Kerjasama dan Pengelolaan Usaha, asrama didesain sebagai suatu wahana dalam mendukung proses
                     pengembangan diri dan pembangunan karakter pribadi mahasiswa. Berlokasi di dalam area kampus ITS Sukolilo dan didukung fasilitas yang memadai, menjadikan asrama mahasiswa adalah suatu pilihan kenyamanan dan keamanan dalam mengiringi
@@ -127,78 +130,141 @@
                 <a href="jenis.html" type="button" class="btn btn-primary">Cari Asrama</a>
             </div>
             <div class="carousel-item active">
-                <img src="assets/img/asramaits_1.png" class="d-block w-100" alt="...">
+                <img src="assets/img/asramaits_1.png" id="welcomeasrama-margin" class="d-block" alt="...">
 
             </div>
             <div class="carousel-item ">
-                <img src="assets/img/asramaits_1.png" class="d-block w-100" alt="...">
+                <img src="assets/img/asramaits_1.png" id="welcomeasrama-margin" class="d-block" alt="...">
 
             </div>
         </div>
     </div>
-    <div class="content-user">
+    <!-- <h1 data-inviewport="fade-in">An animated element</h1> -->
+    <div class="content-landingpages">
         <div class="container-fluid">
             <div class="layanan-asrama">
-                <p id="judul-layanan-asrama">Layanan Asrama</p>
+                <p id="judul-layanan-asrama" data-inviewport="fade-in">Layanan Asrama</p>
                 <div class="d-flex flex-row">
                     <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama">
+                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
                             <img src="assets/img/laundry2.png" id="icon-layananasrama">
                             <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Laundry</p>
-                            <p>Kamu bisa memesan laundry dari kamarmu.</p>
+                            <p>Kamu bisa memesan laundry hanya dari kamarmu.</p>
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama">
+                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
                             <img src="assets/img/group.svg" id="icon-layananasrama">
                             <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Aula Belajar</p>
                             <p>Tempat para penghuni berlajar bersama.</p>
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama">
+                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
                             <img src="assets/img/canteen.png" id="icon-layananasrama">
                             <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Kantin</p>
                             <p>Kamu bisa menikmati berbagai makanan yang murah dan lezat.</p>
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama">
+                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
                             <img src="assets/img/bicycle.png" id="icon-layananasrama">
                             <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Sewa Sepeda</p>
                             <p>Kamu juga bisa menyewa sepeda yang disediakan oleh ITS.</p>
                         </div>
                     </div>
+                    <div class="col-sm">
+                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
+                            <img src="assets/img/security.png" id="icon-layananasrama">
+                            <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Keamanan</p>
+                            <p>Asrama memiliki keamanan yang baik karena dijaga oleh tim keamanan asrama.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="layanan-asrama">
-                <p id="judul-layanan-asrama" style="margin-top: 100px;">Tentang Kami</p>
+            <div class="layanan-asrama justify-content-center">
+                <p id="judul-layanan-asrama" style="margin-top: 100px;" data-inviewport="fade-in">Info Penting</p>
                 <div class="row tab-layanan">
                     <div class="col-sm">
-                        <p class="tx-18" style="margin-top: 10px; margin-bottom: 20px;">Asrama Mahasiswa ITS</p>
-                        <div style="line-height: 5px;">
-                            <p>Kantor Asrama Mahasiswa ITS</p>
-                            <p>Jalan Teknik Elektro, Kampus ITS, Sukolilo, Surabaya, 60111</p>
-                            <p>Pelayanan:</p>
-                            <p>Senin s/d Jumat (08:00 - 16:00 WIB)</p>
-                            <br><br>
-                            <p>Hubungi Kami</p>
-                            <p>085648101073 (Kurnia Ardiyani)</p>
-                            <p>(031) 592 5965</p>
-                            <p>asrama@its.ac.id</p>
-                            <p>@asramamahasiswaits</p>
+                        <img id="gambar-ilustrasi" src="assets/img/nomorpenting.png" class="d-block" data-inviewport="fade-left">
+                    </div>
+                    <div class="col-sm">
+
+                        <div class="card" id="card-infopenting" data-inviewport="fade-right">
+                            <p class="tx-18 mb-4">Laundry Asrama ITS</p>
+                            <p>Waktu Pelayanan:</p>
+                            <p>Senin s/d Sabtu (08:00 - 21:00</p>
+                            <p>0822 1234 6752 (Roselia Putri)</p>
+                        </div>
+                        <div class="card" id="card-infopenting" data-inviewport="fade-right">
+                            <p class="tx-18 mb-4">Tim Keamanan Asrama ITS</p>
+                            <p>Narahubung: </p>
+                            <p>0812 2434 6752 (Budi Sulistio)</p>
+                        </div>
+                        <div class="card" id="card-infopenting" data-inviewport="fade-right">
+                            <p class="tx-18 mb-4">Sewa Sepeda</p>
+                            <p>Waktu Pelayanan:</p>
+                            <p>Senin s/d Minggu (06:00 - 21:00</p>
+                            <p>0856 7654 9876 (Sandika Pradana)</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="layanan-asrama justify-content-lg-center">
+                <p id="judul-layanan-asrama" style="margin-top: 100px;" data-inviewport="fade-in">Tentang Kami</p>
+                <!-- <p class="tx-18" style="text-align: center; margin-top: -25px; margin-bottom: 20px;">Asrama Mahasiswa ITS</p> -->
+                <div class="row tab-layanan">
+                    <div class="col-sm">
+                        <div style="margin-right: 20px;" class="card" id="card-tentangkami" data-inviewport="fade-left">
+                            <div style="line-height: 5px;">
+                                <p class="tx-18 mb-4">Kantor Asrama Mahasiswa ITS</p>
+                                <p>Jalan Teknik Elektro, Kampus ITS, Sukolilo, Surabaya, 60111</p>
+                                <p>Waktu Pelayanan:</p>
+                                <p>Senin s/d Jumat)</p>
+                                <p>(08:00 - 16:00 WIB</p>
+                            </div>
                         </div>
 
                     </div>
-                    <div class="col-sm-auto">
-                        <img id="gambar-laundry" src="assets/img/asramaits_1.png" class="d-block w-150" alt="...">
+                    <div class="col-sm">
+                        <div style="margin-left: 20px;" class="card" id="card-tentangkami" data-inviewport="fade-right">
+                            <div>
+                                <p class="tx-18 mb-4">Hubungi Kami</p>
+                                <p style="margin-top: -5px;"><i data-feather="smartphone" style="width: 14px; margin-right: 10px;"></i>085648101073 (Kurnia Ardiyani)</p>
+                                <p style="margin-top: -15px;"><i data-feather="phone" style="width: 14px; margin-right: 10px;"></i>(031) 592 5965</p>
+                                <p style="margin-top: -15px;"><i data-feather="mail" style="width: 14px; margin-right: 10px;"></i>asrama@its.ac.id</p>
+                                <p style="margin-top: -15px;"><i data-feather="instagram" style="width: 14px; margin-right: 10px;"></i>@asramamahasiswaits</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-
+    <div class="footer" id="footer">
+        <p>©Copyright 2021 • Institut Teknologi Sepuluh Nopember</p>
+    </div>
 </body>
+
+<script>
+    const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+        });
+    };
+
+    const Obs = new IntersectionObserver(inViewport);
+    const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+    // Attach observer to every [data-inviewport] element:
+    const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+    ELs_inViewport.forEach(EL => {
+        Obs.observe(EL, obsOptions);
+    });
+</script>
 
 <script>
     var substringMatcher = function(strs) {
