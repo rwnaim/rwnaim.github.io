@@ -1113,7 +1113,7 @@ label {
 }
 
 .tab-layanan {
-    justify-content: center;
+    /* justify-content: center; */
     max-width: 1350px;
     line-height: 5px;
 }
