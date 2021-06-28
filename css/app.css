@@ -981,6 +981,15 @@ label {
     padding-bottom: 0px;
 }
 
+#card-isipesanan-pesananselesai {
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    color: gray;
+}
+
 #header-card-isipesanan {
     font-size: 16px;
     color: #333;
@@ -1114,4 +1123,19 @@ label {
     border-radius: 10px;
     padding: 25px;
     height: 230px;
+}
+
+#kembalikehalamanutama {
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-right: 15px;
+}
+
+#card-notifikasi {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#notifikasi-baru {
+    background-color: #F2F7FD;
 }

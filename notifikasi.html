@@ -78,7 +78,7 @@
             </div>
             <div class="navbar-right">
                 <div class="dropdown dropdown-message">
-                    <a href="/pesanan/semua" class="dropdown-link new-indicator">
+                    <a href="pesanan-semua.html" class="dropdown-link new-indicator">
                         <i data-feather="shopping-cart"></i>
                         <!-- <span>1</span> -->
                     </a>
@@ -92,7 +92,26 @@
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="dropdown-header">Notifikasi</div>
                         <a href="" class="dropdown-item">
-                            <p class="tx-12 pd-t-4" style="text-align: center;">Tidak ada notifikasi.</p>
+                            <div class="media">
+                                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                                <div class="media-body mg-l-15">
+                                    <p>Pemesanan Anda <strong>#CH612190321013</strong> telah diproses. Silahkan cek kembali pesanan Anda untuk melakukan check in kamar. </p>
+                                    <span>10 Juni 10:43</span>
+                                </div>
+                                <!-- media-body -->
+                            </div>
+                            <!-- media -->
+                        </a>
+                        <a href="" class="dropdown-item">
+                            <div class="media">
+                                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                                <div class="media-body mg-l-15">
+                                    <p>Pemesanan Anda <strong>#CH612190321013 </strong>sedang diproses. Silahkan menunggu dalam waktu 1x24 jam. </p>
+                                    <span>2 menit yang lalu</span>
+                                </div>
+                                <!-- media-body -->
+                            </div>
+                            <!-- media -->
                         </a>
                         <div class="dropdown-footer"><a href="#" style="float: right; margin-bottom:10px;">Lihat
                                 selengkapnya</a> <a href="#" style="float: left; margin-bottom:10px;">Tandai semua
@@ -141,150 +160,70 @@
             </div>
         </div>
     </div>
-
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <div class="content-user">
-        <div class="container-fluid">
-            <div class="judul-halaman-checkout d-inline-flex">
-                <a class="btn" href="{{url('/checkout')}}" id="button_kembali" role="button">
-                    <ion-icon name="arrow-back-outline" style="font-size: 30px; margin-left:0px"></ion-icon>
-                </a>
-                <p class="tx-black-700 tx-24">Lanjutkan Pembayaran</p>
-            </div>
-            <div class="row">
-                <div class="col-md">
-                    <div class="card" id="card-checkout">
-                        <div class="judul-section">
-                            <h4>Data Diri</h4>
-                        </div>
-                        <div class="card-divider"></div>
-
-                        <div class="nama-nrp">
-                            <p>Rana Wijdan Naim <span>(05111740000187)</span> <span class="badge badge-pill badge-primary" style="font-size: 14px; float:right; align-items:middle;">Mahasiswa Non Bidikmisi</span></p>
-
-                        </div>
-                        <div class="datadiri-lengkap">
-                            <p>Departemen Teknik Informaitka - FTEIC</p>
-                            <p>ranawijdannaim@gmail.com</p>
-                            <p>082234361234</p>
-                            <p>Jl. Remaja, Desa Patianrowo, Kec. Patianrowo, Kab. Nganjuk, Jawa Timur. 64391</p>
-                        </div>
-                        <br>
-                        <div class="card-divider"></div>
-                        <div class="judul-section">
-                            <h4>Tatai Tertib Asrama Mahasiswa ITS <span class="badge badge-pill badge-success" style="font-size: 14px; float:right; align-items:middle;">Saya Telah Menyetujui Tata Tertib</span></h4>
-
-                        </div>
-                        <div>
-                            <a href="#" type="button" class="btn btn-outline-primary">Download Tata Tertib</a>
-                        </div>
-
-                    </div>
+        <div class="content-body">
+            <div class="container pd-x-0">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mg-b-0 tx-spacing--1">Notifikasi Anda</h4>
                 </div>
-                <div class="col-md-auto">
-                    <div class="card" id="card-metodepembayaran">
-                        <p class="judul-ringkasanpemesanan">Pilih Metode Pembayaran</p>
-                        <div>
-
-                            <div class="row">
-                                <div class="col-sm">
-                                    <label>
-                                    <input type="radio" name="demo" class="card-input-element d-none" id="demo1" checked>
-                                    <div class="card card-body d-flex flex-row justify-content-between align-items-center">
-                                        <div class="row">
-                                            <div class="col-sm-12" id="pilih-metode">
-                                                <img src="assets/img/logo-bni.png" class="img-metodepembayaran ">
-                                                <p>BNI Virtual Account</p>
+                <div class="row row-xs">
+                    <div class="col-lg-12 col-xl-8 mg-t-20">
+                        <div class="card" id="card-notifikasi">
+                            <!-- <div class="card-body pd-l-25 pd-r-25 pd-t-0 pd-b-0">
+                                <div class="d-flex justify-content-between mg-b-20">
+                                    <div class="d-flex pd-t-20 align-items-center">
+                                        <div class="media align-items-center">
+                                            <div class="media-body mg-l-15">
+                                                <p class="mb-0">Pemesanan Anda <strong>#CH612190321013 </strong>sedang diproses.</p>
+                                                <p class="mb-1">Silahkan menunggu dalam waktu 1x24 jam. </p>
+                                                <span class="tx-color-03 tx-11">2 menit yang lalu</span>
                                             </div>
                                         </div>
                                     </div>
-                                </label>
                                 </div>
-                                <div class="col-sm" style="margin-left: -25px;">
-                                    <label>
-                                    <input type="radio" name="demo" class="card-input-element d-none" id="demo2">
-                                    <div class="card card-body d-flex flex-row justify-content-between align-items-center">
-                                        <div class="row">
-                                            <div class="col-sm-12" id="pilih-metode">
-                                                <img src="assets/img/logo-mandiri.png" class="img-metodepembayaran ">
-                                                <p>Mandiri Virtual Account</p>
+                                <hr>
+                            </div> -->
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <p class="mb-0">Pesanan Anda <strong>#CH612190321013 </strong> telah selesai.
+                                                </p>
+                                                <p class="mb-1">Anda mendapatkan <b>Kamar 235</b> yang terletak di <b>Blok G Lantai 2</b>.</p>
+
+                                                <span class="tx-color-03 tx-11">3 menit yang lalu</span>
                                             </div>
                                         </div>
                                     </div>
-
-                                </label>
                                 </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="card" id="card-ringkasanpemesanan">
-                        <div class="margin-section">
-                            <p class="judul-ringkasanpemesanan">Ringkasan Pemesanan</p>
-                            <div class="media">
-                                <img src="assets/img/asramaits_1.png" class="img-ringkasanpemesanan d-block" alt="">
-                                <div class="media-body">
-                                    <p class="jeniskamar-ringkasanpemesanan">Standard Quadruple</p>
-                                    <p class="isi-ringkasanpemesanan" style="margin-bottom:0px;">Blog G - Lantai 2</p>
-                                    <p class="isi-ringkasanpemesanan" style="margin-bottom:0px;">1 Kasur</p>
-                                    <p class="isi-ringkasanpemesanan" style="margin-bottom:0px;">Kontrak Sewa: 6 Bulan</p>
+                                <hr>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <p class="mb-0">Pemesanan Anda <strong>#CH612190321013 </strong>sedang diproses.
+                                                </p>
+                                                <p class="mb-1">Silahkan menunggu dalam waktu 1x24 jam. </p>
+                                                <span class="tx-color-03 tx-11">10 menit yang lalu</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <hr>
                             </div>
+                            <a href="index.html" type="button" class="btn btn-outline-primary" id="kembalikehalamanutama">Kembali ke halaman utama</a>
                         </div>
-                        <div class="card-divider"></div>
-                        <p class="totalharga-rp">Total Pembayaran</p>
-                        <p class="harga-ringkasanpemesanan">Rp 1.350.000</p>
-                        <br>
-                        <a type="button" href="selesaikanpembayaran.html" class="btn btn-primary btn-block">Bayar Sekarang</a>
+                        <!-- card -->
+
                     </div>
-                    <!--  -->
-
-
                 </div>
             </div>
+            <!-- container -->
         </div>
     </div>
 
-    <script>
-        $(function() {
-            $('#stat-mahasiswa').change(function() {
-                $('.unggahdokumen').hide();
-                $('#' + $(this).val()).show();
-            });
-        });
-        var cleave = new Cleave('#inputPhoneNumber', {
-            phone: true,
-            phoneRegionCode: 'ID'
-        });
 
-        $(document).ready(function() {
-            var fakultas = $('#fakultas'),
-                departemen = $('#departemen');
-
-            colors.change(function() {
-                var val = $(this).find(":selected").attr('data-group');
-                departemen.find('option').removeAttr('disabled');
-                departemen.find('option:selected').removeAttr('selected');
-                departemen.find("option[data-group!=" + val + "]").attr('disabled', 'disabled');
-            })
-
-        });
-        $('#file_bidikmisi').on('change', function() {
-            //get the file name
-            var fileName = $(this).val();
-            //replace the "Choose a file" label
-            $(this).next('.custom-file-label').html(fileName);
-        });
-        $(document).ready(function() {
-            $('.js-example-basic-single').select2();
-        });
-        $('.select2').select2();
-        const scroll1 = new PerfectScrollbar('#scrolltest', {
-            suppressScrollX: true
-        });
-    </script>
 
 </body>
 

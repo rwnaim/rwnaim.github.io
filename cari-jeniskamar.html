@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
     <title>myITS Dorm</title>
 
     <style>
@@ -89,30 +90,11 @@
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="dropdown-header">Notifikasi</div>
                         <a href="" class="dropdown-item">
-                            <div class="media">
-                                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
-                                <div class="media-body mg-l-15">
-                                    <p>Pemesanan Anda <strong>#CH612190321013</strong> telah diproses. Silahkan cek kembali pesanan Anda untuk melakukan check in kamar. </p>
-                                    <span>10 Juni 10:43</span>
-                                </div>
-                                <!-- media-body -->
-                            </div>
-                            <!-- media -->
-                        </a>
-                        <a href="" class="dropdown-item">
-                            <div class="media">
-                                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-                                <div class="media-body mg-l-15">
-                                    <p>Pemesanan Anda <strong>#CH612190321013 </strong>sedang diproses. Silahkan menunggu dalam waktu 1x24 jam. </p>
-                                    <span>10 Juni 10:43</span>
-                                </div>
-                                <!-- media-body -->
-                            </div>
-                            <!-- media -->
+                            <p class="tx-12 pd-t-4" style="text-align: center;">Tidak ada notifikasi.</p>
                         </a>
                         <div class="dropdown-footer"><a href="#" style="float: right; margin-bottom:10px;">Lihat
-                            selengkapnya</a> <a href="#" style="float: left; margin-bottom:10px;">Tandai semua
-                            dibaca</a></div>
+                                selengkapnya</a> <a href="#" style="float: left; margin-bottom:10px;">Tandai semua
+                                dibaca</a></div>
                     </div>
                     <!-- dropdown-menu -->
                 </div>
@@ -161,7 +143,8 @@
     <div class="content-user">
         <div class="container-fluid">
             <div class="judul-halaman">
-                <p class="tx-black-700 tx-18">Hasil Pencarian</p>
+                <p class="tx-black-700 tx-24 mb-1">Hasil Pencarian</p>
+                <p>"Double"</p>
             </div>
             <div class="row">
                 <div class="col-jeniskamar-filter">
@@ -179,7 +162,7 @@
                             <div class="row row-filter">
                                 <label for="isi_kamar" class="d-block">Isi Kamar</label>
                                 <select class="custom-select" name="isi_kamar">
-                                    <option value="" disabled selected>Semua</option>
+                                    <option value="" selected>Semua</option>
                                     <option value="2orang">2 Orang</option>
                                     <option value="4orang">4 Orang</option>
                                 </select>
@@ -187,7 +170,7 @@
                             <div class="row row-filter">
                                 <label for="kamar_mandi" class="d-block">Kamar Mandi</label>
                                 <select class="custom-select" name="kamar_mandi">
-                                    <option value="" disabled selected>Semua Kamar Mandi</option>
+                                    <option value="" selected>Semua Kamar Mandi</option>
                                     <option value="km_dalam">Kamar Mandi Dalam</option>
                                     <option value="km_luar">Kamar Mandi Luar</option>
                                 </select>
@@ -195,7 +178,7 @@
                             <div class="row row-filter">
                                 <label for="ac" class="d-block">Jenis AC</label>
                                 <select class="custom-select" name="ac">
-                                    <option value="" disabled selected>Semua</option>
+                                    <option value="" selected>Semua</option>
                                     <option value="berac">Ber-AC</option>
                                     <option value="nonac">Non-AC</option>
                                 </select>
@@ -209,63 +192,6 @@
                 </div>
                 <div class="col-sm" id="col-card-jeniskamar">
                     <div class="row">
-                        <div class="col-jeniskamar-card">
-                            <div class="card" id="card-jeniskamar">
-                                <img src="assets/img/abcde.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Standard Quadruple</h5>
-                                    <!-- <p class="card-text">Some quick example text...</p> -->
-                                    <div class="row">
-                                        <div class="col-md-12" id="label-blok">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok A
-                                                </span>
-                                                <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok B
-                                                </span>
-                                                <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok C
-                                                </span>
-                                                <!-- <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok D
-                                                </span>
-                                                <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok E -->
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    4 Orang
-                                                </li>
-                                            </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    Wifi ruang bersama
-                                                </li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    Ber-AC
-                                                </li>
-                                            </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    K. Mandi Luar
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="jenis-detail.html" class="stretched-link"></a>
-                                    <div class="card-divider"></div>
-                                    <p class="card-text tx-16">Rp 375.000 / bulan</p>
-                                    <!-- <a href="#" class="btn btn-primary btn-block">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
                         <!--Card Jenis Kamar -->
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
@@ -480,143 +406,7 @@
                             </div>
                         </div>
                         <!--Card Jenis Kamar -->
-                        <div class="col-jeniskamar-card">
-                            <div class="card" id="card-jeniskamar">
-                                <img src="assets/img/k.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Superior Quadruple K</h5>
-                                    <!-- <p class="card-text">Some quick example text...</p> -->
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    4 Orang
-                                                </li>
-                                            </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    Wifi ruang bersama
-                                                </li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    Ber-AC
-                                                </li>
-                                            </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    K. Mandi Luar
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="stretched-link"></a>
-                                    <div class="card-divider"></div>
-                                    <p class="card-text tx-16">Rp 375.000 / bulan</p>
-                                    <!-- <a href="#" class="btn btn-primary btn-block">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card Jenis Kamar -->
-                        <div class="col-jeniskamar-card">
-                            <div class="card" id="card-jeniskamar">
-                                <img src="assets/img/inter-D.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Deluxe Internasional Blok D</h5>
-                                    <!-- <p class="card-text">Some quick example text...</p> -->
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    4 Orang
-                                                </li>
-                                            </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    Wifi ruang bersama
-                                                </li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    Ber-AC
-                                                </li>
-                                            </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    K. Mandi Luar
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="stretched-link"></a>
-                                    <div class="card-divider"></div>
-                                    <p class="card-text tx-16">Rp 375.000 / bulan</p>
-                                    <!-- <a href="#" class="btn btn-primary btn-block">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card Jenis Kamar -->
-                        <div class="col-jeniskamar-card">
-                            <div class="card" id="card-jeniskamar">
-                                <img src="assets/img/inter-J.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Deluxe Internasional Blok J</h5>
-                                    <!-- <p class="card-text">Some quick example text...</p> -->
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    4 Orang
-                                                </li>
-                                            </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    Wifi ruang bersama
-                                                </li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    Ber-AC
-                                                </li>
-                                            </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
-                                                    K. Mandi Luar
-                                                </li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="stretched-link"></a>
-                                    <div class="card-divider"></div>
-                                    <p class="card-text tx-16">Rp 375.000 / bulan</p>
-                                    <!-- <a href="#" class="btn btn-primary btn-block">Go somewhere</a> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!--Card Jenis Kamar -->
                     </div>
-
-
-
-
                 </div>
 
             </div>
