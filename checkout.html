@@ -168,7 +168,7 @@
                 </a>
                 <p class="tx-black-700 tx-24">Checkout</p>
             </div>
-            <form>
+            <form id="checkout-form">
                 <div class="row">
                     <div class="col-md">
 
@@ -180,30 +180,35 @@
                             <div class="margin-section">
                                 <div class="row">
                                     <div class="col-6" tyle="margin-top:15px;">
-                                        <label for="nama_lengkap">Nama Lengkap</label>
-                                        <input type="text" class="form-control" placeholder="" required>
+                                        <label for="nama_lengkap">Nama Lengkap <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
+                                        <input id="validasi" type="text" class="form-control" placeholder="" required>
                                     </div>
                                     <div class="col-6" tyle="margin-top:15px;">
-                                        <label for="nrp">NRP</label>
-                                        <input type="text" class="form-control" placeholder="" required>
+                                        <label for="nrp">NRP <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
+                                        <input id="validasi2" type="text" class="form-control" placeholder="" required>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6" style="margin-top:15px;">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail" placeholder="nama@email.com" required>
+                                        <label for="email">Email <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
+                                        <input id="validasi3" type="email" class="form-control" id="inputEmail" placeholder="nama@email.com" required>
                                     </div>
                                     <div class="col-6" style="margin-top: 15px;">
-                                        <label for="nomor_hp">Nomor Ponsel</label>
+                                        <label for="nomor_hp">Nomor Ponsel <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">+62</span>
                                             </div>
-                                            <input id="inputPhoneNumber" type="text" class="form-control" placeholder="masukkan nomor ponsel anda" required>
+                                            <input id="validasi4" id="inputPhoneNumber" type="text" class="form-control" placeholder="masukkan nomor ponsel anda" required>
                                         </div>
                                     </div>
                                     <div class="col-6" style="margin-top: 15px;">
-                                        <label for="fakultas">Fakultas</label>
+                                        <label for="fakultas">Fakultas <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
                                         <select class="custom-select" name="fakultas" id="fakultas" required>
                                             <option value="" disabled selected>Pilih Fakultas</option>
                                             <option value="fteic" data-group="fteic">Fakultas Teknologi Elektro dan
@@ -221,7 +226,8 @@
                                         </select>
                                     </div>
                                     <div class="col-6" style="margin-top: 15px;">
-                                        <label for="departemen">Departemen</label>
+                                        <label for="departemen">Departemen <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
                                         <select class="custom-select" name="departemen" id="departemen" required>
                                             <option value="" disabled selected>Pilih Departemen</option>
                                             <option value="informatics" data-group="fteic">Departemen Teknik
@@ -240,12 +246,14 @@
                                     <input id="alamat_lengkap" type="text" class="form-control" placeholder="Masukkan alamat lengkap anda">
                                 </div> -->
                                     <div class="col-12" style="margin-top: 15px;">
-                                        <label for="alamat_lengkap" class="d-block">Alamat Lengkap</label>
-                                        <textarea class="form-control" rows="2" placeholder="Masukkan alamat lengkap anda" required></textarea>
+                                        <label for="alamat_lengkap" class="d-block">Alamat Lengkap <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
+                                        <textarea id="validasi5" class="form-control" rows="2" placeholder="Masukkan alamat lengkap anda" required></textarea>
                                     </div>
                                     <div class="col-12" style="margin-top: 15px;">
-                                        <label for="stat_mahasiswa">Status Mahasiswa</label>
-                                        <select class="custom-select" id="stat-mahasiswa" required>
+                                        <label for="stat_mahasiswa">Status Mahasiswa <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
+                                        <select class="custom-select" id="stat-mahasiswa">
                                             <option value="" disabled selected>Pilih Status Mahasiswa</option>
                                             <option value="bm">Bidik Misi</option>
                                             <option value="non_bm">Non Bidik Misi</option>
@@ -260,9 +268,10 @@
                                     </div>
                                     <div class="card-divider"></div>
                                     <div class="margin-section">
-                                        <label for="buktibidikmisi">Bukti Penerimaan Bidik Misi</label>
+                                        <label for="buktibidikmisi">Bukti Penerimaan Bidik Misi <span
+                                                style="color: #EB5757; font-size: 15px;">*</span></label>
                                         <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="file_bidikmisi">
+                                            <input type="file" class="custom-file-input" id="file_bidikmisi" required>
                                             <label class="custom-file-label" for="file_bidikmisi">Pilih File</label>
                                         </div>
                                     </div>
@@ -295,9 +304,9 @@
                             <p class="totalharga-rp">Total Pembayaran</p>
                             <p class="harga-ringkasanpemesanan">Rp 1.350.000</p>
                             <br>
-                            <button data-target=".bd-example-modal-lg" data-toggle="modal" class="btn btn-primary btn-block">Lanjutkan</button>
+                            <button id="lanjutkan" class="btn btn-primary btn-block">Lanjutkan</button>
                             <!-- <button type="submit" class="btn btn-primary btn-block">Pilih Metode Pembayaran</button> -->
-                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div id="modal-tatatertib" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-content">
@@ -370,7 +379,8 @@
                                                             <li>Menghalangi atau menghambat kelancaran tugas manajemen asrama dalam melakukan pemeriksaan/inspeksi mendadak
                                                                 <b><i>(baik dengan
                                                                         pemberitahuan maupun tanpa
-                                                                        pemberitahuan)</i></b> untuk keperluan pengendalian lingkungan dan ketertiban asrama.</li>
+                                                                        pemberitahuan)</i></b> untuk keperluan pengendalian lingkungan dan ketertiban asrama.
+                                                            </li>
                                                             <li>Merusak, merubah atau memindah barang inventaris milik asrama.
                                                             </li>
                                                             <li>Mencoret-coret, memaku, melobangi, menempel-nempel di dinding kamar/fasilitas asrama lainnya.</li>
@@ -453,7 +463,7 @@
                                                     Tertib</a>
                                                 <a href="metodepembayaran.html" type="button" class="btn btn-primary">Lanjutkan Pembayaran</a>
                                             </div>
-                                        </div>ß
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -466,6 +476,21 @@
 
 
 </body>
+<script>
+    $("#lanjutkan").click(function() {
+        if ($("#validasi").val() != "" && $("#validasi2").val() != "" && $("#validasi3").val() != "" && $("#validasi4").val() != "" && $("#validasi5").val() != "") {
+            $('#modal-tatatertib').modal('show');
+            // $(this).closest("form").submit();
+        }
+        // $("#modal-tatatertib").modal();
+    });
+    // $(document).ready(function() {
+    //     $('#checkout-form').on('click', function(e) {
+    //         $('#modal-tatatertib').modal('show');
+    //         // e.preventDefault();
+    //     });
+    // });
+</script>
 
 <script>
     $(function() {
