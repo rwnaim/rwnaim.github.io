@@ -66,52 +66,49 @@
             <!-- <div class="container"> -->
             <div class="search-navbar d-flex">
                 <div class="logo-myits">
-                    <!-- <a href="../../index.html" class="df-logo" style="padding-top: 0.33594rem; padding-bottom: 0.33594rem; margin-right: 1rem;">myITS<span>Asrama</span></a> -->
-                    <a href="index.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
+                    <!-- <a href="../../asrama.html" class="df-logo" style="padding-top: 0.33594rem; padding-bottom: 0.33594rem; margin-right: 1rem;">myITS<span>Asrama</span></a> -->
+                    <a href="asrama.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
                 </div>
-                <form class="form-inline" action="cari-jeniskamar.html">
-                    <div class="search-form" style="padding-bottom: 0.33594rem;">
-                        <input id="theBasics" type="search" class="form-control" placeholder="Cari Jenis Kamar">
-                        <button class="btn" type="button"><i data-feather="search"></i></button>
-                    </div>
-                </form>
+                <div class="search-form" style="padding-bottom: 0.33594rem;">
+                    <input id="theBasics" type="search" class="form-control" placeholder="Cari Jenis Kamar">
+                    <button class="btn" type="button"><i data-feather="search"></i></button>
+                </div>
+
             </div>
 
 
             <div class="navbar-right">
                 <div class="dropdown dropdown-message">
-                    <a href="pesanan-semua.html" class="dropdown-link new-indicator">
+                    <a href="/pesanan/semua" class="dropdown-link new-indicator">
                         <i data-feather="shopping-cart"></i>
-                        <span>1</span>
+                        <!-- <span>1</span> -->
                     </a>
                 </div>
                 <!-- dropdown -->
                 <div class="dropdown dropdown-notification">
                     <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
                         <i data-feather="bell"></i>
-                        <span>1</span>
+                        <!-- <span>2</span> -->
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="dropdown-header">Notifikasi</div>
-                        <a href="pesanan-selesai.html" class="dropdown-item">
-                            <div class="media" id="notifikasi-baru">
-                                <!-- <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div> -->
+                        <a href="" class="dropdown-item">
+                            <div class="media">
+                                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
                                 <div class="media-body mg-l-15">
-                                    <p>Pesanan Anda <strong>#CH612190321013 </strong> telah selesai. Anda mendapatkan <b>Kamar 235</b> yang terletak di <b>Blok G Lantai 2</b>. </p>
-                                    <span>3 menit yang lalu</span>
-                                    <!-- <a href="" class="stretched-link"></a> -->
+                                    <p>Pesanan Anda <strong>#CH612190321013</strong> telah diproses. Silahkan cek kembali pesanan Anda untuk melakukan check in kamar. </p>
+                                    <span>10 Juni 10:43</span>
                                 </div>
-
                                 <!-- media-body -->
                             </div>
                             <!-- media -->
                         </a>
                         <a href="" class="dropdown-item">
                             <div class="media">
-                                <!-- <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div> -->
+                                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
                                 <div class="media-body mg-l-15">
                                     <p>Pesanan Anda <strong>#CH612190321013 </strong>sedang diproses. Silahkan menunggu dalam waktu 1x24 jam. </p>
-                                    <span>10 menit yang lalu</span>
+                                    <span>10 Juni 10:43</span>
                                 </div>
                                 <!-- media-body -->
                             </div>
@@ -126,22 +123,9 @@
                 <!-- dropdown -->
                 <div style="border-left:1.5px solid #BDBDBD;height:30px; margin-left:30px;"></div>
                 <div class="dropdown dropdown-profile">
-                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
-                        <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                    <a href="#modalLogin" class="btn btn-brand-02" data-toggle="modal" style="width: 100px;">Masuk
                     </a>
                     <!-- dropdown-link -->
-                    <div class="dropdown-menu dropdown-menu-right tx-13">
-                        <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
-                        <h6 class="tx-semibold mg-b-5">Rana Wijdan Naim</h6>
-                        <p class="mg-b-25 tx-12 tx-color-03">Mahasiswa ITS</p>
-                        <a href="" class="dropdown-item"><i data-feather="settings"></i>Pengaturan Akun</a>
-                        <!-- <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a> -->
-                        <div class="dropdown-divider"></div>
-
-                        <!-- <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a> -->
-                        <a href="#" data-target="#keluar" data-toggle="modal" class="dropdown-item" style="color: #EB5757;" aria-labelledby="keluar"><i data-feather="log-out"></i>Keluar</a>
-                    </div>
-                    <!-- dropdown-menu -->
                 </div>
                 <!-- dropdown -->
             </div>
@@ -149,7 +133,40 @@
             <!-- </div> -->
         </div>
     </header>
-    <div class="modal fade" tabindex="-1" role="dialog" id="keluar" aria-hidden="true">
+    <div class="modal fade effect-scale" id="modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body pd-20 pd-sm-30">
+                    <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+                    <div class="d-sm-flex justify-content-lg-center">
+                        <!-- <img style="margin-bottom: 25px; width: 20%" src="assets/img/myits-dorm-blue.png" class="img-fluid pos-absolute l-30" alt=""> -->
+                        <h2 style="text-align: center;">Masuk Akun</h2>
+                    </div>
+                    <!-- <hr> -->
+
+                    <div class="d-sm-flex" style="margin-top: 10px;">
+                        <div class="flex-fill">
+
+                            <p class="tx-color-03 tx-14" style="text-align: center;">Anda harus sudah terdaftar terlebih dahulu sebagai Mahasiswa Institut Teknologi Sepuluh Nopember. </p>
+                            <!-- <hr> -->
+                            <br>
+                            <a href="asrama.html" class="btn btn-brand-02 horizontal-center tx-medium" style="max-width: 250px;"><img style="max-width: 12%; margin-right: 10px;" src="assets/img/ITS_white-bold.png"><span class="align-items-baseline">Masuk dengan myITS</span></a>
+                        </div>
+                        <!-- col -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+
+    <!-- <div class="modal fade" tabindex="-1" role="dialog" id="keluar" aria-hidden="true">
         <div class="modal-dialog modal-sm " role="document">
             <div class="modal-content">
                 <div class="modal-body" style="text-align: center;">
@@ -158,12 +175,12 @@
                 <div class="modal-footer-keluar">
                     <div class="d-flex flex-row justify-content-between">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                        <a href="index.html" type="button" class="btn btn-primary">&nbsp Ya &nbsp</a>
+                        <a href="asrama.html" type="button" class="btn btn-primary">&nbsp Ya &nbsp</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="carousel slide" data-ride="carousel" id="welcomeasrama-margin">
@@ -236,63 +253,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-laundry" role="tab" aria-controls="pills-laundry" aria-selected="true" style="font-size: 16px;">Laundry</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-aulabelajar" role="tab" aria-controls="pills-aulabelajar" aria-selected="false" style="font-size: 16px;">Aula Belajar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-kantin" role="tab" aria-controls="pills-kantin" aria-selected="false" style="font-size: 16px;">&nbsp Kantin &nbsp</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-sewasepeda" role="tab" aria-controls="pills-sewasepeda" aria-selected="false" style="font-size: 16px;">Sewa Sepeda</a>
-                    </li>
-                </ul>
-                <div class="tab-content tab-layanan tx-center" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-laundry" role="tabpanel" aria-labelledby="pills-laundry-tab">
-                        <div class="d-flex flex-row" id="isi-layananasrama">
-                            <div class="col-sm-auto">
-                                <img id="gambar-laundry" src="{{asset('assets/img/laundry.jpeg')}}" class="d-block w-150" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <h4 class="tx-left">Laundy Asrama ITS</h4>
-                                <p class="text-justify"> Laundry Cuci Baju simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-aulabelajar" role="tabpanel" aria-labelledby="pills-aulabelajar-tab">
-                        <div class="d-flex flex-row" id="isi-layananasrama">
-                            <div class="col-sm-auto">
-                                <img id="gambar-laundry" src="{{asset('assets/img/laundry.jpeg')}}" class="d-block w-150" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <p class="text-justify">Aula belajar yang luas dan nyaman untuk belajar bersama teman-teman. simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-kantin" role="tabpanel" aria-labelledby="pills-kantin-tab">
-                        <div class="d-flex flex-row" id="isi-layananasrama">
-                            <div class="col-sm-auto">
-                                <img id="gambar-laundry" src="{{asset('assets/img/laundry.jpeg')}}" class="d-block w-150" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <p class="text-justify">Kantin dengan berbagai makanan yang beragam yang murah dan enak. simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-sewasepeda" role="tabpanel" aria-labelledby="pills-sewasepeda-tab">
-                        <div class="d-flex flex-row" id="isi-layananasrama">
-                            <div class="col-sm-auto">
-                                <img id="gambar-laundry" src="{{asset('assets/img/laundry.jpeg')}}" class="d-block w-150" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <p class="text-justify">Kamu juga dapat menyewa sepeda dengan cara: simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <div class="layanan-asrama">
                 <p id="judul-layanan-asrama" style="margin-top: 100px;">Tentang Kami</p>
