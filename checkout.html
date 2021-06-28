@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+
+    <title>myITS Dorm</title>
+
+    <style>
+        ion-icon {
+            font-size: 20px;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js -->
+
+
+    <!-- Meta -->
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/favicon.png">
+
+
+    <!-- vendor css -->
+
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/dashforge.css" rel="stylesheet">
+    <link href="css/dashforge.filemgr.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js" rel="stylesheet" />
+    <link href="css/dashforge.dashboard.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="lib/feather-icons/feather.min.js" type="text/javascript"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+</head>
+
+<body>
+    <header class="navbar navbar-header navbar-header-fixed">
+        <div class="container-fluid">
+            <!-- <div class="container"> -->
+            <div class="search-navbar d-flex">
+                <div class="logo-myits">
+                    <!-- <a href="../../index.html" class="df-logo" style="padding-top: 0.33594rem; padding-bottom: 0.33594rem; margin-right: 1rem;">myITS<span>Asrama</span></a> -->
+                    <a href="index.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
+                </div>
+                <div class="search-form" style="padding-bottom: 0.33594rem;">
+                    <input id="theBasics" type="search" class="form-control" placeholder="Cari Jenis Kamar">
+                    <button class="btn" type="button"><i data-feather="search"></i></button>
+                </div>
+
+
+
+            </div>
+            <div class="navbar-right">
+                <div class="dropdown dropdown-message">
+                    <a href="pesanan-semua.html" class="dropdown-link new-indicator">
+                        <i data-feather="shopping-cart"></i>
+                        <!-- <span>1</span> -->
+                    </a>
+                </div>
+                <!-- dropdown -->
+                <div class="dropdown dropdown-notification">
+                    <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+                        <i data-feather="bell"></i>
+                        <!-- <span>2</span> -->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header">Notifikasi</div>
+                        <a href="" class="dropdown-item">
+                            <div class="media">
+                                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                                <div class="media-body mg-l-15">
+                                    <p>Pemesanan Anda <strong>#CH612190321013</strong> telah diproses. Silahkan cek kembali pesanan Anda untuk melakukan check in kamar. </p>
+                                    <span>10 Juni 10:43</span>
+                                </div>
+                                <!-- media-body -->
+                            </div>
+                            <!-- media -->
+                        </a>
+                        <a href="" class="dropdown-item">
+                            <div class="media">
+                                <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                                <div class="media-body mg-l-15">
+                                    <p>Pemesanan Anda <strong>#CH612190321013 </strong>sedang diproses. Silahkan menunggu dalam waktu 1x24 jam. </p>
+                                    <span>10 Juni 10:43</span>
+                                </div>
+                                <!-- media-body -->
+                            </div>
+                            <!-- media -->
+                        </a>
+                        <div class="dropdown-footer"><a href="#" style="float: right; margin-bottom:10px;">Lihat
+                                selengkapnya</a> <a href="#" style="float: left; margin-bottom:10px;">Tandai semua
+                                dibaca</a></div>
+                    </div>
+                    <!-- dropdown-menu -->
+                </div>
+                <!-- dropdown -->
+                <div style="border-left:1.5px solid #BDBDBD;height:30px; margin-left:30px;"></div>
+                <div class="dropdown dropdown-profile">
+                    <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                        <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                    </a>
+                    <!-- dropdown-link -->
+                    <div class="dropdown-menu dropdown-menu-right tx-13">
+                        <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                        <h6 class="tx-semibold mg-b-5">Rana Wijdan Naim</h6>
+                        <p class="mg-b-25 tx-12 tx-color-03">Mahasiswa ITS</p>
+                        <a href="" class="dropdown-item"><i data-feather="settings"></i>Pengaturan Akun</a>
+                        <!-- <a href="page-profile-view.html" class="dropdown-item"><i data-feather="user"></i> View Profile</a> -->
+                        <div class="dropdown-divider"></div>
+
+                        <!-- <a href="" class="dropdown-item"><i data-feather="settings"></i>Privacy Settings</a> -->
+                        <a href="#" data-target="#keluar" data-toggle="modal" class="dropdown-item" style="color: #EB5757;" aria-labelledby="keluar"><i data-feather="log-out"></i>Keluar</a>
+                    </div>
+                    <!-- dropdown-menu -->
+                </div>
+                <!-- dropdown -->
+            </div>
+            <!-- navbar-right -->
+            <!-- </div> -->
+        </div>
+    </header>
+    <div class="modal fade" tabindex="-1" role="dialog" id="keluar" aria-hidden="true">
+        <div class="modal-dialog modal-sm " role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align: center;">
+                    <h5 class="modal-title">Apakah anda yakin ingin keluar akun?</h5>
+                </div>
+                <div class="modal-footer-keluar">
+                    <div class="d-flex flex-row justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                        <a href="index.html" type="button" class="btn btn-primary">&nbsp Ya &nbsp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-user">
+        <div class="container-fluid">
+            <div class="judul-halaman-checkout d-inline-flex">
+                <a class="btn" href="jenis-detail.html" id="button_kembali" role="button">
+                    <ion-icon name="arrow-back-outline" style="font-size: 30px; margin-left:0px"></ion-icon>
+                </a>
+                <p class="tx-black-700 tx-24">Checkout</p>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md">
+
+                        <div class="card" id="card-checkout">
+                            <div class="judul-section">
+                                <h5>Lengkapi Data Diri</h5>
+                            </div>
+                            <div class="card-divider"></div>
+                            <div class="margin-section">
+                                <div class="row">
+                                    <div class="col-6" tyle="margin-top:15px;">
+                                        <label for="nama_lengkap">Nama Lengkap</label>
+                                        <input type="text" class="form-control" placeholder="" required>
+                                    </div>
+                                    <div class="col-6" tyle="margin-top:15px;">
+                                        <label for="nrp">NRP</label>
+                                        <input type="text" class="form-control" placeholder="" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6" style="margin-top:15px;">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="nama@email.com" required>
+                                    </div>
+                                    <div class="col-6" style="margin-top: 15px;">
+                                        <label for="nomor_hp">Nomor Ponsel</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">+62</span>
+                                            </div>
+                                            <input id="inputPhoneNumber" type="text" class="form-control" placeholder="masukkan nomor ponsel anda" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6" style="margin-top: 15px;">
+                                        <label for="fakultas">Fakultas</label>
+                                        <select class="custom-select" name="fakultas" id="fakultas" required>
+                                            <option value="" disabled selected>Pilih Fakultas</option>
+                                            <option value="fteic" data-group="fteic">Fakultas Teknologi Elektro dan
+                                                Informatika Cerdas</option>
+                                            <option value="fsad" data-group="fsad">Fakultas Sains dan Analitika Data
+                                            </option>
+                                            <option value="ftirs">Fakultas Teknologi Industri dan Rekayasa Sistem
+                                            </option>
+                                            <option value="ftspk">Fakultas Teknik Sipil, Perencanaan, dan Kebumian
+                                            </option>
+                                            <option value="ftk">Fakultas Teknologi Kelautan</option>
+                                            <option value="fdkd" data-group="fdkd">Fakultas Desain Kreatif dan
+                                                Digital</option>
+                                            <option value="fv">Fakultas Vokasi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6" style="margin-top: 15px;">
+                                        <label for="departemen">Departemen</label>
+                                        <select class="custom-select" name="departemen" id="departemen" required>
+                                            <option value="" disabled selected>Pilih Departemen</option>
+                                            <option value="informatics" data-group="fteic">Departemen Teknik
+                                                Informatika</option>
+                                            <option value="sist_infor" data-group="fteic">Departemen Sistem
+                                                Informasi</option>
+                                            <option value="tek_infor" data-group="fteic">Departemen Teknologi
+                                                Informasi</option>
+                                            <option value="tek_kom" data-group="fteic">Departemen Teknik Komputer
+                                            </option>
+                                            <!-- <option value="dkv" data-group="fdkd">Departemen Desain Komunikasi Visual</option> -->
+                                        </select>
+                                    </div>
+                                    <!-- <div class="col-12" style="margin-top: 15px;">
+                                    <label for="alamat_lengkap">Alamat Lengkap</label>
+                                    <input id="alamat_lengkap" type="text" class="form-control" placeholder="Masukkan alamat lengkap anda">
+                                </div> -->
+                                    <div class="col-12" style="margin-top: 15px;">
+                                        <label for="alamat_lengkap" class="d-block">Alamat Lengkap</label>
+                                        <textarea class="form-control" rows="2" placeholder="Masukkan alamat lengkap anda" required></textarea>
+                                    </div>
+                                    <div class="col-12" style="margin-top: 15px;">
+                                        <label for="stat_mahasiswa">Status Mahasiswa</label>
+                                        <select class="custom-select" id="stat-mahasiswa" required>
+                                            <option value="" disabled selected>Pilih Status Mahasiswa</option>
+                                            <option value="bm">Bidik Misi</option>
+                                            <option value="non_bm">Non Bidik Misi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="unggahdokumen" id="bm" style="display: none;">
+                                    <div class="judul-section">
+                                        <h5>Unggah Dokumen</h5>
+                                    </div>
+                                    <div class="card-divider"></div>
+                                    <div class="margin-section">
+                                        <label for="buktibidikmisi">Bukti Penerimaan Bidik Misi</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="file_bidikmisi">
+                                            <label class="custom-file-label" for="file_bidikmisi">Pilih File</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="tombol">
+                                <a href="#" type="button" class="btn btn-primary">Selanjutnya</a>
+                            </div> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="card" id="card-ringkasanpemesanan">
+                            <div class="margin-section">
+                                <p class="judul-ringkasanpemesanan">Ringkasan Pemesanan</p>
+                                <div class="media">
+                                    <img src="assets/img/abcde.png" class="img-ringkasanpemesanan d-block" alt="">
+                                    <div class="media-body">
+                                        <p class="jeniskamar-ringkasanpemesanan">Standard Quadruple</p>
+                                        <p class="isi-ringkasanpemesanan" style="margin-bottom:0px;">Blog G - Lantai 2
+                                        </p>
+                                        <p class="isi-ringkasanpemesanan" style="margin-bottom:0px;">1 Kasur</p>
+                                        <p class="isi-ringkasanpemesanan" style="margin-bottom:0px;">Kontrak Sewa: 3 Bulan
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-divider"></div>
+                            <p class="totalharga-rp">Total Pembayaran</p>
+                            <p class="harga-ringkasanpemesanan">Rp 1.350.000</p>
+                            <br>
+                            <button data-target=".bd-example-modal-lg" data-toggle="modal" class="btn btn-primary btn-block">Lanjutkan</button>
+                            <!-- <button type="submit" class="btn btn-primary btn-block">Pilih Metode Pembayaran</button> -->
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 style="text-align: center;">Tata Tertib Penghuni</h2>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pos-relative ht-400 bd overflow-auto">
+                                                    <div class="pd-20">
+                                                        <h3 style="text-align: center;"><b>Tertib Penghuni Asrama
+                                                                Mahasiswa</b></h3>
+                                                        <h3 style="text-align: center; margin-top:-5px;"><b>Institut
+                                                                Teknologi Sepuluh Nopember</b></h3>
+                                                        <h5 style="margin-top: 20px;"><b>Pasal 1 Kewajiban Bagi
+                                                                Penghuni</b></h5>
+                                                        <ol>
+                                                            <li>Mentaati peraturan/tata tertib yang berlaku di Asrama Mahasiswa.
+                                                            </li>
+                                                            <li>Menjaga keamanan, ketertiban, kebersihan, dan ketenangan di lingkungan asrama.</li>
+                                                            <li>Menjaga kondisi dan keutuhan seluruh barang inventaris milik asrama, baik yang terdapat di dalam kamar maupun luar kamar.</li>
+                                                            <li>Menempati kamar sesuai kesepakatan yang tertuang dalam surat perjanjian sewa/kontrak.</li>
+                                                            <li>Menjaga kebersihan kamar termasuk kamar mandi dalam.
+                                                            </li>
+                                                            <li>Menjaga kebersihan lingkungan dan tidak mencoret tembok dinding kamar/barang inventaris lainnya.</li>
+                                                            <li>Menjaga kesopanan termasuk dalam hal tata cara berpakaian selama berada di luar kamar.</li>
+                                                            <li>Dalam kondisi tertentu untuk keperluan penataan dan efisiensi pengelolaan asrama, penghuni bersedia dilakukan pemindahan kamar yang sifat dan standarnya sejenis.
+                                                            </li>
+                                                            <li>Ikut serta aktif dalam upaya penghematan penggunaan energi di lingkungan asrama, yaitu : listrik dan air.
+                                                            </li>
+                                                            <li>Melaporkan sesegera mungkin apabila terjadi masalah dalam kamarnya (kerusakan barang/ kebocoran/jaringan listrik dll), seperti : kran air patah, listrik korsleting, dll.</li>
+                                                            <li>Melaporkan kepada pengelola asrama, bagi penghuni yang mengetahui dan atau melihat kejadian pelanggaran tata tertib yang berlaku di lingkungan asrama.
+                                                            </li>
+                                                            <li>Menempel sticker ASRAMA bagi penghuni yang memiliki dan membawa kendaraan bermotor. </li>
+                                                            <li>Menempatkan/memarkir kendaraan bermotor pada tempat parkir yang telah disediakan.</li>
+                                                            <li>Khusus bagi penghuni kamar yang sumber pembiayaan berasal dari beasiswa dalam pengelolaan ITS, sanggup membayar/melunasi biaya sewa kamar tepat waktu di awal bulan, paling lambat tanggal 5 (lima)
+                                                                setiap bulannya.
+                                                            </li>
+                                                            <li>Khusus bagi penghuni kamar yang berisikan lebih dari 1 (satu) orang dengan menyewa secara bersama, maka:
+                                                            </li>
+                                                            <ol style="list-style-type:lower-alpha">
+                                                                <li>Apabila rekan sekamar pindah kamar dengan alasan apapun (lulus, dsb), maka bersedia membayar kamar yang disewa dengan tarif penuh.</li>
+                                                                <li>Atau bersedia mengikuti pola sebagaimana dinyatakan pada ayat 8 dalam pasal ini.</li>
+                                                            </ol>
+                                                            <li>Khusus bagi penghuni kamar ber-AC, maka:</li>
+                                                            <ol style="list-style-type:lower-alpha">
+                                                                <li>Wajib memberikan keleluasaan waktu dan tempat bagi petugas/teknisi asrama untuk melakukan perawatan AC berkala sesuai jadwal yang telah ditentukan oleh pengelola asrama</li>
+                                                                <li>Wajib melunasi tagihan penggunaan listrik AC sesuai dengan penggunaan bulan berjalan, pada awal bulan berikutnya, untuk tipe kamar dengan listrik pasca bayar.
+                                                                </li>
+                                                            </ol>
+                                                            <li>Pada saat check out (keluar dari asrama) baik karena masa tinggal sudah berakhir ataupun atas kemauan sendiri sebelum masa kontrak berakhir, maka penghuni wajib mengembalikan kunci kamar, semua
+                                                                barang inventaris yang disediakan oleh asrama dalam keadaan baik dan lengkap seperti semula, termasuk memastikan kondisi kamar dalam keadaan baik, bersih, tidak ada coretan/tempelan/lobang
+                                                                paku dll.</li>
+                                                        </ol>
+                                                        <h5 style="margin-top: 20px;"><b>Pasal 2 Larangan Bagi
+                                                                Penghuni</b></h5>
+                                                        <ol>
+                                                            <li>Membawa, mengedarkan, menyimpan, mengkonsumsi minuman keras, alkohol, narkotika, psikotropika dan obat-obatan terlarang.
+                                                            </li>
+                                                            <li>Melakukan kegiatan perjudian serta melakukan pencurian atau sejenisnya.</li>
+                                                            <li>Melakukan kegiatan perjudian serta melakukan pencurian atau sejenisnya.</li>
+                                                            <li>Melakukan perbuatan yang melanggar norma-norma kesopanan dan kesusilaan.</li>
+                                                            <li>Berkelahi, melakukan tindakan kekerasan fisik maupun mental dan hal-hal lainnya yang dapat mengganggu ketertiban dan ketenangan di lingkungan Asrama.</li>
+                                                            <li>Membawa dan memelihara hewan peliharaan ke dalam kamar atau ke dalam lingkungan Asrama.</li>
+                                                            <li>Memasukkan penjual makanan/minuman dan laundry dari luar ke dalam lingkungan asrama.</li>
+                                                            <li>Menghalangi atau menghambat kelancaran tugas manajemen asrama dalam perbaikan, pemeriksaan fasilitas dan kamar.
+                                                            </li>
+                                                            <li>Menghalangi atau menghambat kelancaran tugas manajemen asrama dalam melakukan pemeriksaan/inspeksi mendadak
+                                                                <b><i>(baik dengan
+                                                                        pemberitahuan maupun tanpa
+                                                                        pemberitahuan)</i></b> untuk keperluan pengendalian lingkungan dan ketertiban asrama.</li>
+                                                            <li>Merusak, merubah atau memindah barang inventaris milik asrama.
+                                                            </li>
+                                                            <li>Mencoret-coret, memaku, melobangi, menempel-nempel di dinding kamar/fasilitas asrama lainnya.</li>
+                                                            <li>Membuang sampah sembarangan (tidak pada tempatnya).
+                                                            </li>
+                                                            <li>Memasak/menggoreng dengan peralatan masak apapun di dalam kamar.</li>
+                                                            <li>Melakukan intimidasi dan penghinaan agama, ras, suku, golongan.
+                                                            </li>
+                                                            <li>Menyambung/menambah jaringan internet menggunakan kabel dan peralatan lainnya.</li>
+                                                            <li>Mencuci kendaraan bermotor menggunakan air PDAM asrama.v
+                                                            </li>
+                                                            <li>Berpindah kamar/gedung tanpa adanya ijin tertulis dari manajamen asrama, selama masa sewa masih berjalan.
+                                                            </li>
+                                                        </ol>
+                                                        <h5 style="margin-top: 20px;"><b>Pasal 3 Penggunaan
+                                                                Peralatan dengan Sumber Daya Listrik dan Lainnya</b>
+                                                        </h5>
+                                                        <ol>
+                                                            <li>Pihak Asrama menyediakan daya listrik sebesar 900 watt (4 Ampere) tiap kamar.</li>
+                                                            <li>Selama tinggal dan menghuni asrama, penghuni
+                                                                <b>diperbolehkan</b> membawa dan menggunakan peralatan listrik berikut secara gratis, yaitu:
+                                                            </li>
+                                                            <ol style="list-style-type:lower-alpha">
+                                                                <li>Kipas Angin</li>
+                                                                <li>Setrika</li>
+                                                                <li>Komputer desktop atau notebook (laptop)</li>
+                                                                <li>Printer</li>
+                                                                <li>Rice cooker</li>
+                                                            </ol>
+                                                            <li>Selama tinggal dan menghuni asrama, penghuni
+                                                                <b>diperbolehkan</b> membawa dan menggunakan peralatan kulkas/lemari es 1 pintu dengan kapasitas maksimal 200 liter, dengan biaya tambahan Rp. 175.000,-per bulan.
+                                                            </li>
+                                                            <li>Selama tinggal dan menghuni asrama, penghuni
+                                                                <b>tidak diperbolehkan</b> membawa dan menggunakan peralatan listrik sebagai berikut:
+                                                            </li>
+                                                            <ol style="list-style-type:lower-alpha">
+                                                                <li>Kompor listrik, kompor gas dan jenis kompor portable lainnya
+                                                                </li>
+                                                                <li>Water heater (pemanas air) dengan daya di atas 300 watt
+                                                                </li>
+                                                                <li>AC split dan AC portable</li>
+                                                                <li>Peralatan laminating</li>
+                                                                <li>Freezer</li>
+                                                            </ol>
+                                                            <li>Pemakaian air conditioner (AC) diperkecualikan berdasar ayat 4.c pada pasal ini, adalah AC yang sudah terpasang oleh pihak asrama, dengan ketentuan sebagai berikut:
+                                                            </li>
+                                                            <ol style="list-style-type:lower-alpha">
+                                                                <li>AC yang terpasang di kamar asrama internasional, TIDAK DIKENAKAN biaya tambahan. Biaya pemakaian AC ditanggung sendiri oleh penghuni melalui biaya listrik token per kamar.</li>
+                                                                <li>AC yang terpasang di beberapa kamar asrama lokal, akan DIKENAKAN biaya tambahan sebesar Rp. 500.000,- per kamar per bulan, di luar sewa kamar dan biaya pemakaian listrik AC bulanan. Adapun
+                                                                    biaya pemakaian listrik AC akan ditagih dan wajib dibayar setiap bulan sesuai dengan tagihan kWh meter yang digunakan dikalikan Rp. 5.000,-per kWh.</li>
+                                                            </ol>
+                                                        </ol>
+                                                        <h5 style="margin-top: 20px;"><b>Pasal 4 Sanksi
+                                                                Pelanggaran</b></h5>
+                                                        <ol>
+                                                            <li>Pihak asrama berhak menyita Kartu Tanda Mahasiswa (KTM) atau kartu identitas yang sah lainnya, apabila terjadi pelanggaran.
+                                                            </li>
+                                                            <li>Pihak asrama berhak mengeluarkan penghuni apabila melakukan tindak kriminal, menggunakan narkoba, pelanggaran berat serta pelanggaran lain dalam ketentuan di atas.</li>
+                                                            <li>Pelanggaran sebagai akibat pada ayat 2 pada pasal ini, maka sisa uang sewa/kontrak dianggap hilang/hangus dan tidak bisa ditarik dengan alasan apapun.
+                                                            </li>
+                                                            <li>Segala bentuk tindak kriminal dan penggunaan narkotika serta tergabung menjadi anggota ormas terlarang akan dilaporkan kepada Pimpinan ITS dan Pihak Berwajib.</li>
+                                                            <li>Pengembalian inventaris kamar dan kondisi kamar sewa yang tidak memenuhi dalam pasal 1 ayat 17 di atas, maka penghuni akan dikenakan denda sesuai dengan ketentuan tarif denda yang ditetapkan
+                                                                manajemen asrama.
+                                                            </li>
+                                                        </ol>
+                                                        <h5 style="margin-top: 20px;"><b>Pasal 5 Ketentuan
+                                                                Lainnya</b></h5>
+                                                        <p>Hal-hal yang belum diatur dalam perjanjian ini akan ditentukan kemudian oleh manajemen asrama ITS dan diinformasikan kepada penghuni</p>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-control custom-checkbox my-1 mr-sm-2" id="checkbox-persetujuan">
+                                                    <input type="checkbox" class="custom-control-input" id="customControlInline" style="margin-top: 15px;">
+                                                    <label class="custom-control-label" for="customControlInline" style="margin-top: 15px;"><b>Saya Setuju dengan Peraturan
+                                                            Asrama</b></label>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                                <a href="#" type="button" class="btn btn-outline-dark">Download Tata
+                                                    Tertib</a>
+                                                <a href="metodepembayaran.html" type="button" class="btn btn-primary">Lanjutkan Pembayaran</a>
+                                            </div>
+                                        </div>ß
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    $(function() {
+        $('#stat-mahasiswa').change(function() {
+            $('.unggahdokumen').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+    var cleave = new Cleave('#inputPhoneNumber', {
+        phone: true,
+        phoneRegionCode: 'ID'
+    });
+
+    $(document).ready(function() {
+        var fakultas = $('#fakultas'),
+            departemen = $('#departemen');
+
+        colors.change(function() {
+            var val = $(this).find(":selected").attr('data-group');
+            departemen.find('option').removeAttr('disabled');
+            departemen.find('option:selected').removeAttr('selected');
+            departemen.find("option[data-group!=" + val + "]").attr('disabled', 'disabled');
+        })
+
+    });
+    $('#file_bidikmisi').on('change', function() {
+        //get the file name
+        var fileName = $(this).val();
+        //replace the "Choose a file" label
+        $(this).next('.custom-file-label').html(fileName);
+    });
+</script>
+<script>
+    var substringMatcher = function(strs) {
+        return function findMatches(q, cb) {
+            var matches, substrRegex;
+
+            // an array that will be populated with substring matches
+            matches = [];
+
+            // regex used to determine if a string contains the substring `q`
+            substrRegex = new RegExp(q, 'i');
+
+            // iterate through the pool of strings and for any string that
+            // contains the substring `q`, add it to the `matches` array
+            $.each(strs, function(i, str) {
+                if (substrRegex.test(str)) {
+                    matches.push(str);
+                }
+            });
+
+            cb(matches);
+        };
+    };
+
+    var states = ['Standard Quadruple', 'Standard Double', 'Superior Double', 'Superior Double Plus', 'Superior Double K', 'Superior Quadruple K',
+        'Deluxe Internasional Blok D', 'Deluxe Internasional Blok J'
+    ];
+
+    $('#theBasics').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+    }, {
+        name: 'states',
+        source: substringMatcher(states)
+    });
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- <script src="https://unpkg.com/feather-icons"></script>? -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/dashforge.js" type="text/javascript"></script>
+<script src="js/dashforge.aside.js" type="text/javascript"></script>
+<script src="js/dashforge.filemgr.js" type="text/javascript"></script>
+
+<script src="lib/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="lib/feather-icons/feather.min.js" type="text/javascript"></script>
+<script src="lib/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script>
+
+
+<!-- append theme customizer -->
+<script src="lib/js-cookie/js.cookie.js" type="text/javascript"></script>
+<script src="js/dashforge.settings.js" type="text/javascript"></script>
+
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+
+
+</html>

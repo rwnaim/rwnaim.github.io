@@ -449,6 +449,9 @@ fieldset {
         opacity: 0.4;
         cursor: pointer;
     }
+    .tb-active {
+        opacity: 1;
+    }
     .thumbnail-img {
         width: 54px;
         height: 54px;
@@ -478,6 +481,9 @@ fieldset {
         margin: 2px;
         opacity: 0.4;
         cursor: pointer;
+    }
+    .tb-active {
+        opacity: 1;
     }
     .thumbnail-img {
         width: 94px;

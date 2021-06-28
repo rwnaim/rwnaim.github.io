@@ -43,7 +43,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js" rel="stylesheet" />
     <link href="css/dashforge.dashboard.css" rel="stylesheet">
 
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
@@ -102,16 +101,6 @@
                             </div>
                             <!-- media -->
                         </a>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown Menu
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
                         <a href="" class="dropdown-item">
                             <div class="media">
                                 <div class="avatar avatar-sm avatar-online"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
@@ -170,213 +159,188 @@
             </div>
         </div>
     </div>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <div class="content-user">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb-style2 mg-b-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="jenis.html">Cari Jenis Kamar</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Standard Quadruple</li>
-            </ol>
-        </nav>
-        <div class="detail-jeniskamar">
+        <div class="container-fluid">
+            <div class="judul-halaman-checkout d-inline-flex">
+                <p class="tx-black-700 tx-24">Selesaikan Pembayaran</p>
+            </div>
             <div class="row">
-                <div class="col-sm">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="d-flex">
-                                <div class="card" id="card-images">
-                                    <fieldset id="f11" class="active">
-                                        <div class="product-pic"> <img class="pic0" src="assets/img/abcde.png"> </div>
-                                    </fieldset>
-                                    <fieldset id="f21" class="">
-                                        <div class="product-pic"> <img class="pic0" src="assets/img/abcd(SD)1.png"> </div>
-                                    </fieldset>
-                                    <fieldset id="f31" class="">
-                                        <div class="product-pic"> <img class="pic0" src="assets/img/abcd(SD)2.png"> </div>
-                                    </fieldset>
-                                    <fieldset id="f41" class="">
-                                        <div class="product-pic"> <img class="pic0" src="assets/img/abcd(SD)3.png"> </div>
-                                    </fieldset>
-                                    <fieldset id="f51" class="">
-                                        <div class="product-pic"> <img class="pic0" src="assets/img/abcd(SD)4.png"> </div>
-                                    </fieldset>
-                                    <div class="d-flex flex-row thumbnails">
-                                        <div id="f1" class="tb tb-active"> <img class="thumbnail-img d-block" src="assets/img/abcde.png"> </div>
-                                        <div id="f2" class="tb"> <img class="thumbnail-img fit-image" src="assets/img/abcd(SD)1.png"> </div>
-                                        <div id="f3" class="tb"> <img class="thumbnail-img fit-image" src="assets/img/abcd(SD)2.png"> </div>
-                                        <div id="f4" class="tb"> <img class="thumbnail-img fit-image" src="assets/img/abcd(SD)3.png"> </div>
-                                        <div id="f5" class="tb"> <img class="thumbnail-img fit-image" src="assets/img/abcd(SD)4.png"> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div>
-                        <p class="judul-jeniskamar">Standard Quadruple</p>
-                        <div class="d-flex harga-jeniskamar">
-                            <p>Rp 54.000</p>
-                            <p>/bulan</p>
+                <div class="col-sm-auto">
+                    <div class="card" id="card-detailpembayaran">
+                        <div class="judul-section">
+                            <h4>Detail Pembayaran</h4>
                         </div>
                         <div class="card-divider"></div>
-                        <div class="margin-section">
-                            <h5>Deskripsi</h5>
-                            <p>Jenis kamar Standard Quadruple merupakan jenis kamar yang tidak mempunyai AC namun memiliki 4 bed.</p>
-                        </div>
-                        <div>
-                            <div class="card-divider"></div>
-                            <div class="margin-section">
-                                <h5>Fasilitas Utama</h5>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div style="font-size: 14px; margin-top:10px;">
-                                            <ion-icon name="bed-outline" style="font-size: 22px;" class="float-left">
-                                            </ion-icon>
-                                            <li class="list-group" style="padding-left: 10px;">
-                                                4 Orang
-                                            </li>
-                                        </div>
-                                        <div style="font-size: 14px; margin-top:10px;">
-                                            <img src="icon/Internet.svg" class="float-left" width="22px" height="auto" alt="Responsive image">
-                                            <li class="list-group" style="padding-left: 10px;">
-                                                Wifi ruang bersama
-                                            </li>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-2">
-                                        <div style="font-size: 14px; margin-top:10px;">
-                                            <img src="icon/Ac.svg" class="float-left" width="22px" height="auto" alt="Responsive image">
-                                            <li class="list-group" style="padding-left: 10px;">
-                                                Ber-AC
-                                            </li>
-                                        </div>
-                                        <div style="font-size: 14x; margin-top:10px;">
-                                            <img src="icon/Bathtub.svg" class="float-left" width="22px" height="auto" alt="Responsive image">
-                                            <li class="list-group" style="padding-left: 10px;">
-                                                K. Mandi Luar
-                                            </li>
-                                        </div>
-                                    </div>
+                        <div class="selesaikan-pembayaran">
+                            <div>
+                                <p class="label-detailpembayaran">Metode Pembayaran</p>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/img/logo-bni.png" class="img-selesaikanpembayaran">
+                                    <p class="isi-detailpembayaran" style="margin-top: 5px;">BNI Virtual Account</p>
                                 </div>
+                            </div>
+                            <div class="card-divider" style="margin-top: 10px; margin-bottom:20px"></div>
+                            <div class="section-detailpembayaran">
+                                <p class="label-detailpembayaran">Nomor Virtual Account</p>
+                                <div class="d-flex  align-items-center justify-content-between">
+                                    <p class="isi-detailpembayaran" id="noVA">8258811000000004</p>
+                                    <button style="margin-top: -14px;" id="salinVA" type="button" class="btn btn-link" onclick="copyToClipboard('#noVA')" data-toggle="tooltip" data-placement="top" title="Salin"><span>Salin</span></button>
+                                </div>
+
+                            </div>
+                            <div class="section-detailpembayaran">
+                                <p class="label-detailpembayaran">Batas Pembayaran</p>
+                                <p class="isi-detailpembayaran">Senin, 24 Februari 2021. Pukul 10:56 WIB</p>
+                            </div>
+                            <div class="section-detailpembayaran" style="margin-top: 30px; margin-bottom:20px;">
+                                <p class="label-detailpembayaran">Selesaikan Pembayaran Dalam</p>
+                                <!-- <p class="selesaikandalam">23:51:38</p> -->
+                                <p class="selesaikandalam" id="demo"></p>
+                            </div>
+                            <div class="card-divider" style="margin-top: 10px; margin-bottom:20px"></div>
+                            <div class="section-detailpembayaran">
+                                <p class="label-detailpembayaran">Total Pembayaran</p>
+                                <p class="total-detailpembayaran">Rp 1.350.000</p>
+                            </div>
+                            <div class="section-buttonlihatpemesanan">
+                                <a href="pesanan-semua.html" type="button" class="btn btn-outline-primary btn-block">Lihat Pemesanan</a>
                             </div>
 
-                            <div class="card-divider"></div>
-                            <div class="margin-section">
-                                <h5>Fasilitas Standard</h5>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <li>Dipan Susun
-                                        </li>
-                                        <li>Lemari
-                                        </li>
-                                        <li>Meja Belajar</li>
-                                    </div>
-                                    <div class="col-6">
-                                        <li>Kasur</li>
-                                        <li>Cermin</li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-divider"></div>
-                            <div class="margin-section">
-                                <h5>Fasilitas Lainnya</h5>
-                                -
-                            </div>
                         </div>
+
+
+
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card" id="card-rincianpemesanan">
-                        <p class="judul-rincianpemesanan">Rincian Pemesanan</p>
-                        <div class="margin-section">
-                            <div class="pil-rincianpemesanan">
-                                <label for="blok" class="d-block">Blok/Gedung</label>
-                                <select class="custom-select" name="blok">
-                                    <option value="" disabled selected>Pilih Blok/Gedung</option>
-                                    <option value="blok_g">Blok G</option>
-                                    <option value="blok_h">Blok H</option>
-                                </select>
-                            </div>
-                            <div class="pil-rincianpemesanan">
-                                <label for="kontrak_sewa" class="d-block">Kontrak Sewa</label>
-                                <select class="custom-select" name="kontrak_sewa">
-                                    <option value="" disabled selected>Pilih Durasi Kontrak Sewa</option>
-                                    <option value="2orang">3 bulan (bidik misi)</option>
-                                    <option value="4orang">6 bulan</option>
-                                    <option value="4orang">12 bulan</option>
-                                </select>
-                            </div>
-                            <div class="pil-rincianpemesanan">
-                                <label for="lantai" class="d-block">Lantai</label>
-                                <select class="custom-select" name="lantai">
-                                    <option value="" disabled selected>Pilih Lantai</option>
-                                    <option value="km_dalam">Lantai 1</option>
-                                    <option value="km_luar">Lantai 2</option>
-                                    <option value="km_luar">Lantai 3</option>
-                                    <option value="km_luar">Lantai 4</option>
-                                </select>
-                            </div>
-                            <div class="pil-rincianpemesanan">
-                                <label for="ac" class="d-block">Jumlah Pemesanan</label>
-                                <select class="custom-select" name="ac">
-                                    <option value="" disabled selected>Pilih Jumlah Penesanan</option>
-                                    <option value="1_kasur">1 Kasur</option>
-                                    <option value="1_kamar">1 Kamar</option>
-                                </select>
-                            </div>
+                <div class="col-sm-auto">
+                    <div class="card" id="card-petunjukpembayaran">
+                        <div class="judul-section">
+                            <h4>Petunjuk Pembayaran</h4>
                         </div>
                         <div class="card-divider"></div>
-                        <div>
-                            <p class="totalharga-rp">Total Harga</p>
-                            <p class="harga-rincianpemesanan">Rp 1.350.000</p>
-                            <br>
-                            <a href="checkout.html" type="button" class="btn btn-primary btn-block">Pesan
-                                Sekarang</a>
+                        <!-- <div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <label>
+                                <input type="radio" name="demo" class="card-input-element d-none" id="demo1" checked>
+                                <div class="card card-body d-flex flex-row justify-content-between align-items-center">
+                                    <div class="row">
+                                        <div class="col-sm-12" id="pilih-metode">
+                                            <img src="{{asset('assets/img/logo-bni.png')}}" class="img-metodepembayaran ">
+                                            <p>BNI Virtual Account</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
                         </div>
+                        <div class="col-sm" style="margin-left: -25px;">
+                            <label>
+                                <input type="radio" name="demo" class="card-input-element d-none" id="demo2">
+                                <div class="card card-body d-flex flex-row justify-content-between align-items-center">
+                                    <div class="row">
+                                        <div class="col-sm-12" id="pilih-metode">
+                                            <img src="{{asset('assets/img/logo-mandiri.png')}}" class="img-metodepembayaran ">
+                                            <p>Mandiri Virtual Account</p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </label>
+                        </div>
                     </div>
+
+
+                </div> -->
+                    </div>
+
                 </div>
             </div>
         </div>
-
-
-        <script>
-            $(document).ready(function() {
-
-                $(".tb").hover(function() {
-
-                    $(".tb").removeClass("tb-active");
-                    $(this).addClass("tb-active");
-
-                    current_fs = $(".active");
-
-                    next_fs = $(this).attr('id');
-                    next_fs = "#" + next_fs + "1";
-
-                    $("fieldset").removeClass("active");
-                    $(next_fs).addClass("active");
-
-                    current_fs.animate({}, {
-                        step: function() {
-                            current_fs.css({
-                                'display': 'none',
-                                'position': 'relative'
-                            });
-                            next_fs.css({
-                                'display': 'block'
-                            });
-                        }
-                    });
-                });
-            });
-        </script>
     </div>
 
 
-
 </body>
+<script>
+    var countDownDate = new Date("Jul 2, 2021 21:59:25").getTime();
 
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d : " + hours + "h  : " +
+            minutes + "m : " + seconds + "s";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+<script>
+    $(function() {
+        $('#stat-mahasiswa').change(function() {
+            $('.unggahdokumen').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+    var cleave = new Cleave('#inputPhoneNumber', {
+        phone: true,
+        phoneRegionCode: 'ID'
+    });
+
+    $(document).ready(function() {
+        var fakultas = $('#fakultas'),
+            departemen = $('#departemen');
+
+        colors.change(function() {
+            var val = $(this).find(":selected").attr('data-group');
+            departemen.find('option').removeAttr('disabled');
+            departemen.find('option:selected').removeAttr('selected');
+            departemen.find("option[data-group!=" + val + "]").attr('disabled', 'disabled');
+        })
+
+    });
+    $('#file_bidikmisi').on('change', function() {
+        //get the file name
+        var fileName = $(this).val();
+        //replace the "Choose a file" label
+        $(this).next('.custom-file-label').html(fileName);
+    });
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+    });
+    $('.select2').select2();
+
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $('#salinVA').click(function() {
+            $(this).attr("data-original-title", "Telah disalin");
+            $(this).tooltip('show');
+            $(this).attr("data-original-title", "Salin");
+        })
+        $temp.remove();
+    }
+</script>
 <script>
     var substringMatcher = function(strs) {
         return function findMatches(q, cb) {
@@ -413,6 +377,7 @@
         source: substringMatcher(states)
     });
 </script>
+
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
