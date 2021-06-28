@@ -1139,3 +1139,11 @@ label {
 #notifikasi-baru {
     background-color: #F2F7FD;
 }
+
+.horizontal-center {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
