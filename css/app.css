@@ -5,9 +5,11 @@
 .section-statistik-dashboard {
     margin-top: 20px;
 }
+
 .section-card-dashboard {
     margin-top: 10px;
 }
+
 #card-outline-dashboard {
     padding: 30px;
     border-radius: 10px;
@@ -20,24 +22,27 @@
     padding-bottom: 0px;
     border-radius: 5px;
 }
+
 .section-tittle {
     color: grey;
 }
 
-.table > tbody > tr > td {
+.table>tbody>tr>td {
     vertical-align: middle;
 }
 
-.table > thead > tr > th {
+.table>thead>tr>th {
     vertical-align: middle;
 }
 
-.title-subtitle > p {
+.title-subtitle>p {
     margin: 0;
 }
+
 .section-table {
     margin-top: 10px;
 }
+
 .section-card {
     margin-top: 25px;
 }
@@ -46,13 +51,14 @@
     padding-left: 10px;
 }
 
-.table > tbody > tr > td > .dropdown {
+.table>tbody>tr>td>.dropdown {
     text-align: center;
 }
 
-.table > tbody > tr > td > .custom-switch {
+.table>tbody>tr>td>.custom-switch {
     align-items: center;
 }
+
 .custom-control .custom-checkbox .coba {
     margin-bottom: 100px;
 }
@@ -71,9 +77,11 @@
     padding-right: 2px;
     margin-right: 10px;
 }
+
 select #jeniskm option[value="kmluar"] {
     background-image: url(/public/icon/Bathtub.svg);
 }
+
 
 /* .area {
     border: 2px dashed #BDBDBD;
@@ -160,11 +168,13 @@ select #jeniskm option[value="kmluar"] {
     border-radius: 0;
     margin-bottom: 0;
 }
+
 .display-image {
     position: relative;
     width: 150px;
     height: 150px;
 }
+
 .center-cropped {
     width: 150px;
     height: 150px;
@@ -183,10 +193,12 @@ select #jeniskm option[value="kmluar"] {
     /* modern browsers */
     opacity: 100;
 }
+
 .apapundeh {
     width: 150px;
     height: 150px;
 }
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -207,6 +219,7 @@ select #jeniskm option[value="kmluar"] {
     position: absolute;
     margin-left: auto;
 }
+
 .container-navbar {
     margin-left: 100px;
     margin-right: 100px;
@@ -217,6 +230,7 @@ select #jeniskm option[value="kmluar"] {
     margin-left: auto;
     margin-right: auto;
 }
+
 @media (min-width: 1000px) {
     .content-user {
         margin-top: 90px;
@@ -224,6 +238,7 @@ select #jeniskm option[value="kmluar"] {
         margin-right: 80px;
     }
 }
+
 @media (min-width: 1500px) {
     .content-user {
         margin-top: 90px;
@@ -231,6 +246,7 @@ select #jeniskm option[value="kmluar"] {
         margin-right: 150px;
     }
 }
+
 .row-filter {
     margin-bottom: 10px;
     padding-left: 20px;
@@ -248,15 +264,17 @@ select #jeniskm option[value="kmluar"] {
 
 #card-jeniskamar {
     max-width: 200px;
-    height: 405px;
+    height: 380px;
     border-radius: 10px;
     /* margin-left: 30px; */
 }
+
 #cardtitle {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
 }
 
@@ -268,23 +286,28 @@ select #jeniskm option[value="kmluar"] {
     margin-bottom: 10px;
 }
 
+
 /* .row-jeniskamar{
     display: inline-flex;
 } */
+
 .col-jeniskamar-filter {
     /* margin-right: 30px; */
     max-width: 316px;
     margin-bottom: 30px;
 }
+
 .col-jeniskamar-card {
     /* display: flex; */
     /* max-width: 500px; */
     margin-bottom: 30px;
     margin-right: 20px;
 }
+
 #col-card-jeniskamar {
     margin-left: 50px;
 }
+
 @media (min-width: 1500px) {
     .col-jeniskamar-card {
         /* max-width: 1000px; */
@@ -292,6 +315,7 @@ select #jeniskm option[value="kmluar"] {
         /* margin-left: 20px; */
     }
 }
+
 @media (max-width: 575.98px) {
     .col-jeniskamar-filter {
         /* margin-top: 90px; */
@@ -309,9 +333,11 @@ select #jeniskm option[value="kmluar"] {
         margin-right: 5px;
     }
 }
+
 .detail-jeniskamar {
     margin-top: 30px;
 }
+
 
 /* Images detail jenis kamar */
 
@@ -373,35 +399,43 @@ fieldset {
     height: 66px;
     object-fit: cover;
 }
+
 .judul-jeniskamar {
     margin-bottom: 5px;
     font-size: 36px;
 }
+
 .harga-jeniskamar {
     font-size: 24px;
 }
+
 #card-rincianpemesanan {
     width: 300px;
     border-radius: 10px;
     padding: 20px;
     padding-top: 15px;
 }
+
 .pil-rincianpemesanan {
     margin-bottom: 10px;
 }
+
 .judul-rincianpemesanan {
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 5px;
 }
+
 .harga-rincianpemesanan {
     font-size: 32px;
     margin-top: 0;
 }
+
 .totalharga-rp {
     margin-top: 10px;
     margin-bottom: auto;
 }
+
 @media screen and (max-width: 768px) {
     .pic0 {
         width: 300px;
@@ -427,6 +461,7 @@ fieldset {
         font-size: 18px;
     }
 }
+
 @media (min-width: 1500px) and (max-width: 2000px) {
     .pic0 {
         width: 500px;
@@ -451,6 +486,7 @@ fieldset {
     }
 }
 
+
 /* Sampe sini buat images detail jenis kamar */
 
 .margin-section {
@@ -465,6 +501,7 @@ fieldset {
     padding-top: 20px;
     margin-bottom: 100px;
 }
+
 @media (min-width: 1500px) and (max-width: 2000px) {
     #card-checkout {
         border-radius: 15px;
@@ -478,6 +515,7 @@ fieldset {
 .judul-section {
     margin-bottom: 10px;
 }
+
 #card-metodepembayaran {
     width: 360px;
     padding: 20px;
@@ -485,12 +523,14 @@ fieldset {
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
 #card-ringkasanpemesanan {
     width: 360px;
     border-radius: 10px;
     padding: 20px;
     padding-top: 5px;
 }
+
 .tombol {
     margin-top: 50px;
     text-align: right;
@@ -508,11 +548,13 @@ fieldset {
     font-size: 18px;
     font-weight: 500;
 }
+
 .jeniskamar-ringkasanpemesanan {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 0px;
 }
+
 .isi-ringkasanpemesanan {
     font-size: 12px;
     margin-top: 2px;
@@ -521,6 +563,7 @@ fieldset {
 .harga-ringkasanpemesanan {
     font-size: 32px;
 }
+
 .judul-halaman-checkout {
     margin-bottom: 5px;
 }
@@ -538,7 +581,9 @@ fieldset {
     color: #000;
 }
 
+
 /* tambah css loader */
+
 .blocker {
     position: fixed;
     top: 0;
@@ -552,7 +597,9 @@ fieldset {
     text-align: center;
 }
 
+
 /* loader custom */
+
 .loader {
     width: 12%;
     height: 10%;
@@ -560,12 +607,14 @@ fieldset {
     background-color: transparent;
     padding: 10px;
 }
+
 .loader .loader-inner {
     width: 60px;
     height: 60px;
     position: relative;
     margin: 0 auto;
 }
+
 .loader .loader-inner div {
     content: "";
     width: 16px;
@@ -579,6 +628,7 @@ fieldset {
     -webkit-animation: loading-14 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
     animation: loading-14 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 .loader .loader-inner .box-2 {
     top: 10px;
     left: auto;
@@ -587,6 +637,7 @@ fieldset {
     -webkit-animation: loading-142 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
     animation: loading-142 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 .loader .loader-inner .box-3 {
     top: auto;
     left: auto;
@@ -596,6 +647,7 @@ fieldset {
     -webkit-animation: loading-143 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
     animation: loading-143 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 .loader .loader-inner .box-4 {
     top: auto;
     bottom: 10px;
@@ -603,6 +655,7 @@ fieldset {
     -webkit-animation: loading-144 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
     animation: loading-144 2s infinite cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 .loader .text {
     margin-top: 10px;
     display: block;
@@ -611,6 +664,7 @@ fieldset {
     color: white;
     text-align: center;
 }
+
 @-webkit-keyframes loading-14 {
     0% {
         transform: rotate(90deg);
@@ -625,6 +679,7 @@ fieldset {
         transform: rotate(360deg);
     }
 }
+
 @keyframes loading-14 {
     0% {
         transform: rotate(90deg);
@@ -639,6 +694,7 @@ fieldset {
         transform: rotate(360deg);
     }
 }
+
 @-webkit-keyframes loading-142 {
     0%,
     25% {
@@ -654,6 +710,7 @@ fieldset {
         transform: rotate(360deg);
     }
 }
+
 @keyframes loading-142 {
     0%,
     25% {
@@ -669,6 +726,7 @@ fieldset {
         transform: rotate(360deg);
     }
 }
+
 @-webkit-keyframes loading-143 {
     0%,
     25% {
@@ -681,6 +739,7 @@ fieldset {
         transform: rotate(360deg);
     }
 }
+
 @keyframes loading-143 {
     0%,
     25% {
@@ -693,6 +752,7 @@ fieldset {
         transform: rotate(360deg);
     }
 }
+
 @-webkit-keyframes loading-144 {
     0%,
     25% {
@@ -706,6 +766,7 @@ fieldset {
         transform: rotate(360deg);
     }
 }
+
 @keyframes loading-144 {
     0%,
     25% {
@@ -720,12 +781,12 @@ fieldset {
     }
 }
 
-.nama-nrp > p {
+.nama-nrp>p {
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.datadiri-lengkap > p {
+.datadiri-lengkap>p {
     font-size: 14px;
     margin-bottom: 0px;
     color: #828282;
@@ -735,13 +796,15 @@ select#metodepembayaran option[value="bni-va"] {
     background-image: url('{{asset("assets/img/asramaits_1.png")}}');
 }
 
-.bootstrap-select > .dropdown-toggle.bs-placeholder:active {
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active {
     background: #fff !important;
     color: #000 !important;
     border-color: #999;
 }
 
+
 /* Card Check */
+
 label {
     /* width: 100%; */
     font-size: 12px;
@@ -751,7 +814,7 @@ label {
     line-height: 16px;
 }
 
-.card-input-element + .card {
+.card-input-element+.card {
     width: 156px;
     height: calc(32px + 2 * 1rem);
     color: #4f4f4f;
@@ -762,11 +825,11 @@ label {
     padding: 8px;
 }
 
-.card-input-element + .card:hover {
+.card-input-element+.card:hover {
     cursor: pointer;
 }
 
-.card-input-element:checked + .card {
+.card-input-element:checked+.card {
     color: var(--primary);
     border: 1px solid var(--primary);
     -webkit-transition: border 0.3s;
@@ -774,6 +837,8 @@ label {
     transition: border 0.3s;
     font-weight: 600;
 }
+
+
 /* 
 .card-input-element:checked + .card::after {
     content: "\e5ca";
@@ -823,6 +888,8 @@ label {
 #pilih-metode {
     padding-top: 15px;
 }
+
+
 /* End Card Check */
 
 .selesaikan-pembayaran {
@@ -830,6 +897,7 @@ label {
     font-size: 15px;
     line-height: 10px;
 }
+
 .img-selesaikanpembayaran {
     width: 75px;
     height: auto;
@@ -837,26 +905,32 @@ label {
     /* margin-bottom: 10px; */
     margin-top: -13px;
 }
+
 .section-detailpembayaran {
     margin-top: 20px;
 }
+
 .label-detailpembayaran {
     font-size: 16px;
     color: #828282;
 }
+
 .isi-detailpembayaran {
     font-size: 18px;
     color: #000000;
 }
+
 .selesaikandalam {
     font-size: 24px;
     font-weight: 600;
     color: #ef7407;
 }
+
 .total-detailpembayaran {
     margin-top: 30px;
     font-size: 32px;
 }
+
 #card-petunjukpembayaran {
     width: 500px;
     padding: 30px;
@@ -864,6 +938,7 @@ label {
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
 .section-buttonlihatpemesanan {
     margin-top: 50px;
 }
@@ -881,9 +956,11 @@ label {
     padding-top: 20px;
     margin-bottom: 100px;
 }
+
 #checkbox-persetujuan {
     margin-top: 20px;
 }
+
 #card-pesanan {
     border-radius: 10px;
     padding-left: 20px;
@@ -891,6 +968,7 @@ label {
     padding-bottom: 30px;
     padding-top: 10px;
 }
+
 #card-isipesanan {
     border-radius: 10px;
     padding: 20px;
@@ -910,6 +988,7 @@ label {
     border-top: 1px solid #e3e7ed;
     margin-bottom: 10px;
 }
+
 #card-body-pesanan p {
     margin-top: 0px;
     margin-bottom: 5px;
@@ -920,18 +999,22 @@ label {
 #card-body-pesanan {
     margin-left: -10px;
 }
+
 #card-footer-pesanan {
     margin-top: 15px;
     /* margin-bottom: 10px; */
 }
+
 #myTab {
     font-size: 16px;
 }
+
 #card-detailpesanan {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
 #card-detailpesanan p {
     margin-bottom: 5px;
     font-weight: lighter;
@@ -944,6 +1027,7 @@ label {
     color: #000;
     max-width: 250px;
 }
+
 #card-detailpesanan #isi-section-detailpemesanan2 {
     font-size: 16px;
     font-weight: normal;
@@ -967,6 +1051,7 @@ label {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .layanan-asrama {
     margin-left: 100px;
     margin-right: 100px;
@@ -981,13 +1066,16 @@ label {
     margin-bottom: 10px;
     text-align: center;
 }
+
 .modal-footer-keluar button {
     width: 110px;
 }
+
 .modal-footer-keluar a {
     width: 110px;
 }
-#gambar-laundry{
+
+#gambar-laundry {
     border-radius: 5px;
     width: 525px;
     height: 350px;
@@ -996,17 +1084,17 @@ label {
     margin-top: auto;
     display: block;
     object-fit: cover;
-
 }
 
-#isi-layananasrama{
+#isi-layananasrama {
     margin-top: 30px;
 }
 
-.tab-layanan{
+.tab-layanan {
     max-width: 1200px;
 }
-#icon-layananasrama{
+
+#icon-layananasrama {
     width: 60px;
     height: 60px;
     margin-bottom: 20px;
@@ -1016,7 +1104,7 @@ label {
     /* object-fit: cover; */
 }
 
-#card-layananasrama{
+#card-layananasrama {
     border-radius: 10px;
     padding: 25px;
     height: 230px;
