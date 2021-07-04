@@ -197,15 +197,29 @@
 
                     </div>
                 </div>
-                <!-- <div class="col-sm-auto">
+                <div class="col-sm-auto">
                     <div class="card" id="card-petunjukpembayaran">
                         <div class="judul-section">
                             <h4>Petunjuk Pembayaran</h4>
                         </div>
-                        <div class="card-divider"></div>
+                        <div class="mb-3 card-divider"></div>
+                        <a href="#">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="tx-300">ATM BNI</h5>
+                                <i data-feather="chevron-down"></i>
+                            </div>
+                        </a>
+                        <div class="mt-2 mb-3 card-divider"></div>
+                        <a href="#">
+                            <div class="d-flex flex-row justify-content-between">
+                                <h5 class="tx-300">BNI Mobile</h5>
+                                <i data-feather="chevron-down"></i>
+                            </div>
+                        </a>
+                        <div class="mt-2 mb-3 card-divider"></div>
                     </div>
 
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -231,8 +245,8 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d : " + hours + "h  : " +
-            minutes + "m : " + seconds + "s";
+        document.getElementById("demo").innerHTML = hours + " Jam  : " +
+            minutes + " Menit : " + seconds + " Detik ";
 
         // If the count down is finished, write some text
         if (distance < 0) {

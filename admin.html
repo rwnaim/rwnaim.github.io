@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        ion-icon {
+            font-size: 20px;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <title>DashForge Responsive Bootstrap 4 Dashboard Template</title> -->
+
+    <!-- vendor css -->
+    <!-- <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <!-- <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet"> -->
+
+    <!-- CSS -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/dashforge.css" rel="stylesheet">
+    <link href="css/dashforge.filemgr.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title>Admin myITS Dorm</title>
+
+
+    <!-- </div>content-header -->
+    <!-- <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="{{url('/dashboard')}}">myITS Dorm</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+                data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="{{url('/login')}}">Login</a>
+            </li>
+        </ul>
+    </nav> -->
+</head>
+
+<body>
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <div class="logo-myits">
+                <a href="admin.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
+            </div>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+            <a href="" id="filemgrMenu" class="burger-menu d-lg-none"><i data-feather="arrow-left"></i></a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="d-flex align-items-center justify-content-start">
+                    <a href="" class="avatar"><img src="assets/img/fotoprofile.png" class="rounded-circle" alt=""></a>
+                </div>
+                <div class="aside-loggedin-user">
+                    <a href="#loggedinMenu" class="d-flex align-items-center justify-content-between mg-b-2" data-toggle="collapse">
+                        <h6 class="tx-semibold mg-b-0">Rana Wijdan Naim</h6>
+                        <i data-feather="chevron-down"></i>
+                    </a>
+                    <p class="tx-color-03 tx-12 mg-b-0">Administrasiistrator</p>
+                </div>
+                <div class="collapse" id="loggedinMenu">
+                    <ul class="nav nav-aside mg-b-0">
+                        <li class="nav-item"><a href="" class="nav-link"><i data-feather="settings"></i> <span>Pengaturan Akun</span></a></li>
+                        <li class="nav-item"></li><a class="nav-link" href="#" aria-labelledby="keluar"><i data-feather="log-out"></i>Keluar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav nav-aside">
+                <li class="nav-item active" style="margin-bottom: 10px;">
+                    <a href="admin.html" class="nav-link">
+                        <ion-icon name="speedometer-outline"></ion-icon><span style="margin-left: 12px;">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item" style="margin-bottom: 10px;">
+                    <a href="admin-pengelolaanblok.html" class="nav-link">
+                        <ion-icon name="business-outline"></ion-icon><span style="margin-left: 12px;">Pengelolaan Blok</span>
+                    </a>
+                </li>
+                <li class="nav-item with-sub" style="margin-bottom: 10px;">
+                    <a href="" class="nav-link with-sub">
+                        <ion-icon name="bed-outline"></ion-icon><span style="margin-left: 12px;">Pengelolaan Kamar</span>
+                    </a>
+                    <ul>
+                        <li><a href="admin-jeniskamar.html">Jenis Kamar</a></li>
+                        <li><a href="admin-daftarkamar.html">Daftar Kamar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-pesanan.html" class="nav-link"><i data-feather="shopping-cart"></i> <span>Pesanan</span></a></li>
+
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-penghuni.html" class="nav-link"><i data-feather="users"></i> <span>Penghuni</span></a></li>
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-laporan.html" class="nav-link"><i data-feather="file-text"></i> <span>Laporan</span></a></li>
+
+            </ul>
+        </div>
+    </aside>
+    <div class="content ht-100v pd-0">
+        <!-- content-header -->
+        <div class="content-header">
+            <div class="content-search">
+                <i data-feather="search"></i>
+                <input type="search" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="admin-content">
+                <div>
+                    <h2>Selamat Datang di Admin myITS Dorm</h2>
+                    <div class="section-statistik-dashboard">
+                        <div class="row">
+                            <div class="col-7">
+                                <!-- <div class="card" id="card-outline-dashboard"> -->
+                                <p class="tx-gray-700 tx-18">Statistik myITS Dorm</p>
+                                <div class="section-card-dashboard">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6>Total Penghuni Mahasiswa ITS</h6>
+                                                    <h1>589 Orang</h1>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6>Pesanan Baru</h6>
+                                                    <h1>23 Pesanan</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6>Total Penghuni Mahasiswa Asing</h6>
+                                                    <h1>12 Orang</h1>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6>Total Pesanan Menunggu Check In</h6>
+                                                    <h1>83 Pesanan</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-statistik-dashboard">
+                                    <p class="tx-gray-700 tx-18">Pesanan baru</p>
+                                    <div class="section-card-dashboard">
+                                        <table class="table table-bordered">
+                                            <thead class="thead-dark">
+
+                                                <tr>
+                                                    <th scope="col">Tanggal Pemesanan</th>
+                                                    <th scope="col">Nomor Pemesanan</th>
+                                                    <th scope="col">Nama Mahasiswa</th>
+                                                    <th scope="col">Jenis Kamar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>30 Februari 2021</td>
+                                                    <td>#CH612300221031</td>
+                                                    <td>Deni Subekti Akbar</td>
+                                                    <td>Blok A - Standard Quadruple</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30 Februari 2021</td>
+                                                    <td>#CH612300221030</td>
+                                                    <td>Siti Sulistiawati</td>
+                                                    <td>Blok E - Standard Double</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30 Februari 2021</td>
+                                                    <td>#CH612300221029</td>
+                                                    <td>Zidan Albert</td>
+                                                    <td>Blok G - Superiror Double Plus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30 Februari 2021</td>
+                                                    <td>#CH612300221028</td>
+                                                    <td>Andi Subakti</td>
+                                                    <td>Blok B - Standard Quadruple</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30 Februari 2021</td>
+                                                    <td>#CH612300221027</td>
+                                                    <td>Lisa Ana Larasati</td>
+                                                    <td>Blok A - Standard Double</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Section/Kolom Kiri -->
+                            <div class="col-5">
+                                <!-- <div class="card" id="card-outline-dashboard"> -->
+                                <p class="tx-gray-700 tx-18">Kuota Per Blok</p>
+                                <div class="section-card-dashboard">
+                                    <div class="card card-body">
+                                        <div class="media d-block d-sm-flex align-items-center">
+                                            <div class="d-inline-block pos-relative">
+                                                <span class="peity-donut" data-peity='{ "fill": ["#013880","#e5e9f2"], "height": 110, "width": 110, "innerRadius": 46 }'>69,31</span>
+
+                                                <div class="pos-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                                                    <h3 class="tx-rubik tx-spacing--1 mg-b-0">69%</h3>
+                                                    <span class="tx-9 tx-semibold tx-sans tx-color-03 tx-uppercase">Terisi</span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body mg-t-20 mg-sm-t-0 mg-sm-l-20">
+                                                <h4 class="mg-b-5">Blok A</h4>
+                                                <div class="marker marker-primary pos-absolute t-20 r-20">Dibuka</div>
+                                                <p class="tx-14"><span style="font-weight: 500;">280</span> / <span style="color: grey;">500</span></p>
+                                                <p>Blok A merupakan ini penjelasan per blok dan fasilitas yang didapatkan diblok tersebut.</p>
+                                            </div>
+                                            <!-- media-body -->
+                                        </div>
+                                        <!-- media -->
+                                    </div>
+                                    <br>
+                                    <div class="section-card-dashboard">
+                                        <div class="card card-body">
+                                            <div class="media d-block d-sm-flex align-items-center">
+                                                <div class="d-inline-block pos-relative">
+                                                    <span class="peity-donut" data-peity='{ "fill": ["#013880","#e5e9f2"], "height": 110, "width": 110, "innerRadius": 46 }'>39,61</span>
+
+                                                    <div class="pos-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                                                        <h3 class="tx-rubik tx-spacing--1 mg-b-0">39%</h3>
+                                                        <span class="tx-9 tx-semibold tx-sans tx-color-03 tx-uppercase">Terisi</span>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body mg-t-20 mg-sm-t-0 mg-sm-l-20">
+                                                    <h4 class="mg-b-5">Blok B</h4>
+                                                    <p class="tx-14"><span style="font-weight: 500;">150</span> / <span style="color: grey;">500</span></p>
+                                                    <p>Blok B merupakan ini penjelasan per blok dan fasilitas yang didapatkan diblok tersebut.</p>
+                                                </div>
+                                                <!-- media-body -->
+                                            </div>
+                                            <!-- media -->
+                                        </div>
+                                        <br>
+                                        <div class="card card-body">
+                                            <div class="media d-block d-sm-flex align-items-center">
+                                                <div class="d-inline-block pos-relative">
+                                                    <span class="peity-donut" data-peity='{ "fill": ["#013880","#e5e9f2"], "height": 110, "width": 110, "innerRadius": 46 }'>86,14</span>
+
+                                                    <div class="pos-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                                                        <h3 class="tx-rubik tx-spacing--1 mg-b-0">86%</h3>
+                                                        <span class="tx-9 tx-semibold tx-sans tx-color-03 tx-uppercase">Terisi</span>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body mg-t-20 mg-sm-t-0 mg-sm-l-20">
+                                                    <h4 class="mg-b-5">Blok C</h4>
+                                                    <div class="marker pos-absolute t-20 r-20">Ditutup</div>
+                                                    <p class="tx-14"><span style="font-weight: 500;">436</span> / <span style="color: grey;">500</span></p>
+                                                    <p>Blok C merupakan ini penjelasan per blok dan fasilitas yang didapatkan diblok tersebut.</p>
+                                                </div>
+                                                <!-- media-body -->
+                                            </div>
+                                            <!-- media -->
+                                        </div>
+                                    </div>
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    feather.replace()
+</script>
+<!-- <script src="lib/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="lib/perfect-scrollbar/perfect-scrollbar.min.jss" type="text/javascript"></script>
+
+
+<script src="lib/jquery.flot/jquery.flot.js" type="text/javascript"></script>
+<script src="lib/jquery.flot/jquery.flot.stack.js" type="text/javascript"></script>
+
+<script src="lib/jquery.flot/jquery.flot.resize.js" type="text/javascript"></script>
+<script src="lib/flot.curvedlines/curvedLines.js" type="text/javascript"></script>
+
+<script src="lib/peity/jquery.peity.min.js" type="text/javascript"></script>
+<script src="lib/chart.js/Chart.bundle.min.js" type="text/javascript"></script>
+
+<script src="js/dashforge.js" type="text/javascript"></script>
+<script src="js/dashforge.sampledata.js" type="text/javascript"></script>
+<script src="js/dashboard-four.js" type="text/javascript"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script> -->
+
+<script src="js/chart.peity.js" type="text/javascript"></script>
+<script src="js/dashforge.js" type="text/javascript"></script>
+<script src="js/dashforge.aside.js" type="text/javascript"></script>
+<script src="js/dashforge.filemgr.js" type="text/javascript"></script>
+
+<script src="lib/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="lib/feather-icons/feather.min.js" type="text/javascript"></script>
+<script src="lib/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script>
+
+
+<!-- append theme customizer -->
+<script src="lib/js-cookie/js.cookie.js" type="text/javascript"></script>
+<script src="js/dashforge.settings.js" type="text/javascript"></script>
+
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+
+
+</html>
