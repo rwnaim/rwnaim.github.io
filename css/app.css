@@ -263,7 +263,7 @@ select #jeniskm option[value="kmluar"] {
 }
 
 #card-jeniskamar {
-    max-width: 200px;
+    max-width: 210px;
     height: 380px;
     border-radius: 10px;
     /* margin-left: 30px; */
@@ -1266,4 +1266,75 @@ label {
 [data-inviewport="fade-rotate"].is-inViewport {
     transform: rotate(180deg);
     opacity: 1;
+}
+
+.label-switch {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    max-width: 80px;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+#header-card-isipesanan-admin {
+    font-size: 14px;
+    color: #333;
+}
+
+#card-penghuni {
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.total-penghuni {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 10px;
+    margin-bottom: -15px;
+}
+
+[data-href] {
+    cursor: pointer;
+}
+
+#card-detailpenghuni {
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#card-detailpenghuni p {
+    margin-bottom: 5px;
+    color: #828282;
+}
+
+#card-detailpenghuni #isi-section-detailpemesanan {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    max-width: 250px;
+}
+
+#card-detailpenghuni #isi-section-detailpemesanan2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+}
+
+#card-chart {
+    line-height: 15px;
+    margin-bottom: 30px;
+}
+
+.card-laporan-tabel-pesanan {
+    margin-top: 20px;
+    padding: 20px;
 }

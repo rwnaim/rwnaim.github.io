@@ -3005,6 +3005,12 @@ textarea.form-control {
     margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+    .form-group {
+        margin-bottom: 0px !important;
+    }
+}
+
 .form-text {
     display: block;
     margin-top: 0.25rem;
@@ -4975,7 +4981,7 @@ input[type="button"].btn-block {
 }
 
 .custom-switch {
-    /* margin-left: 20px;  */
+    margin-left: auto;
     padding-top: 1.25rem;
 }
 
@@ -19497,7 +19503,7 @@ textarea.parsley-success:focus {
 .nav-aside .nav-item.active .nav-link {
     opacity: 1;
     color: #013880;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .nav-aside .nav-item.active .nav-link::before {
@@ -19527,15 +19533,16 @@ textarea.parsley-success:focus {
 .nav-aside .nav-item ul a {
     display: block;
     color: rgba(27, 46, 75, 0.75);
-    padding: 2px 0;
+    padding: 5px 0;
 }
 
 .nav-aside .nav-item ul a:hover,
 .nav-aside .nav-item ul a:focus {
-    color: #1b2e4b;
+    color: #013880;
 }
 
 .nav-aside .nav-item ul .active a {
+    font-weight: 500;
     color: #013880;
 }
 
@@ -19550,12 +19557,12 @@ textarea.parsley-success:focus {
 }
 
 .nav-aside .with-sub.show .nav-link {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .nav-aside .with-sub.show .nav-link::before {
     opacity: 1;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 .nav-aside .with-sub.show .nav-link::after {
@@ -19571,6 +19578,7 @@ textarea.parsley-success:focus {
 
 .nav-aside .with-sub.show:not(.active) .nav-link {
     color: #1b2e4b;
+    font-weight: 400;
 }
 
 .nav-aside .with-sub.show:not(.active) svg {
