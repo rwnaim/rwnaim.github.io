@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        ion-icon {
+            font-size: 20px;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <title>DashForge Responsive Bootstrap 4 Dashboard Template</title> -->
+
+    <!-- vendor css -->
+    <!-- <link href="../../lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <!-- <link href="../../lib/ionicons/css/ionicons.min.css" rel="stylesheet"> -->
+
+    <!-- CSS -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/dashforge.css" rel="stylesheet">
+    <link href="css/dashforge.filemgr.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title>Admin myITS Dorm</title>
+</head>
+
+<body>
+
+
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <div class="logo-myits aside-logo">
+                <a href="admin.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
+            </div>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+            <a href="" id="filemgrMenu" class="burger-menu d-lg-none"><i data-feather="arrow-left"></i></a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="d-flex align-items-center justify-content-start">
+                    <a href="" class="avatar"><img src="assets/img/fotoprofile.png" class="rounded-circle" alt=""></a>
+                </div>
+                <div class="aside-loggedin-user">
+                    <a href="#loggedinMenu" class="d-flex align-items-center justify-content-between mg-b-2" data-toggle="collapse">
+                        <h6 class="tx-semibold mg-b-0">Rana Wijdan Naim</h6>
+                        <i data-feather="chevron-down"></i>
+                    </a>
+                    <p class="tx-color-03 tx-12 mg-b-0">Administrasiistrator</p>
+                </div>
+                <div class="collapse" id="loggedinMenu">
+                    <ul class="nav nav-aside mg-b-0">
+                        <li class="nav-item"><a href="" class="nav-link"><i data-feather="settings"></i> <span>Pengaturan Akun</span></a></li>
+                        <li class="nav-item"></li><a class="nav-link" href="#" aria-labelledby="keluar"><i data-feather="log-out"></i>Keluar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <!-- <li class="nav-label">Dashboard</li> -->
+                <li class="nav-item" style="margin-bottom: 10px;">
+                    <a href="admin.html" class="nav-link">
+                        <ion-icon name="speedometer-outline"></ion-icon><span style="margin-left: 12px;">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item active" style="margin-bottom: 10px;">
+                    <a href="admin-pengelolaanblok.html" class="nav-link">
+                        <ion-icon name="business-outline"></ion-icon><span style="margin-left: 12px;">Pengelolaan Blok</span>
+                    </a>
+                </li>
+                <li class="nav-item with-sub show" style="margin-bottom: 10px;">
+                    <a href="" class="nav-link">
+                        <ion-icon name="bed-outline"></ion-icon><span style="margin-left: 12px;">Pengelolaan Kamar</span>
+                    </a>
+                    <ul>
+                        <li><a href="admin-jeniskamar.html">Jenis Kamar</a></li>
+                        <li><a href="admin-daftarkamar.html">Daftar Kamar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-pesanan.html" class="nav-link"><i data-feather="shopping-cart"></i> <span>Pesanan</span></a></li>
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-penghuni.html" class="nav-link"><i data-feather="users"></i> <span>Penghuni</span></a></li>
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-laporan-pesanan.html" class="nav-link"><i data-feather="file-text"></i> <span>Laporan</span></a></li>
+
+            </ul>
+        </div>
+    </aside>
+    <div class="content ht-100v pd-0">
+        <!-- content-header -->
+        <div class="content-header">
+            <div class="content-search">
+                <i data-feather="search"></i>
+                <input type="search" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="admin-content">
+                <div>
+                    <div class="d-inline-flex">
+                        <a class="btn" href="admin-pengelolaanblok.html" id="button_kembali" role="button">
+                            <ion-icon name="arrow-back-outline" style="font-size: 30px; margin-left:0px"></ion-icon>
+                        </a>
+                        <p class="tx-24">Tambah Blok</p>
+                    </div>
+                    <div class="card" id="card-outline-dashboard">
+                        <form method="post" action="admin-blok-ditambahkan.html" data-parsley-validate>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="namablok" class="d-block tx-14">Nama Blok</label>
+                                    <input type="text" class="form-control" name="nama" placeholder="Contoh: Blok A" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="jenispenghuni" class="d-block tx-14">Jenis Penghuni</label>
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <select class="custom-select" name="jenis_penghuni" required>
+                                                <option value="" disabled selected>Lokal, Bidikmisi, atau Internasional</option>
+                                                <option value="Lokal dan Bidikmisi">Lokal dan Bidikmisi</option>
+                                                <option value="Lokal">Lokal</option>
+                                                <option value="Internasional">Internasional</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select class="custom-select" name="jenis_kelamin" required>
+                                                <option value="" disabled selected>Laki-laki atau Perempuan</option>
+                                                <option value="L">Laki-laki</option>
+                                                <option value="P">Perempuan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row mg-t-15">
+                                <div class="form-group col-md-6">
+                                    <label for="jumlahlantai" class="d-block tx-14">Jumlah Lantai</label>
+                                    <select class="custom-select" name="jumlah_lantai" required>
+                                        <option value="" disabled selected>Pilih Jumlah Lantai</option>
+                                        <option value="1">1 Lantai</option>
+                                        <option value="2">2 Lantai</option>
+                                        <option value="3">3 Lantai</option>
+                                        <option value="4">4 Lantai</option>
+                                        <option value="5">5 Lantai</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="totalkasur" class="d-block tx-14">Total Kasur</label>
+                                    <input type="number" class="form-control" name="total_kasur" placeholder="Contoh: 100" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row mg-t-15 mg-l-0">
+                                <label for="jeniskamar " class="d-block tx-14">Jenis Kamar</label>
+                            </div>
+                            <div class="form-row">
+
+                                <div class="form-group col-md-6">
+                                    <div class="custom-control custom-checkbox" style="margin-bottom: 10px;">
+                                        <input type="checkbox" class="custom-control-input" name="jenis_kamar[1]" value="stq" id="stq">
+                                        <label class="custom-control-label" for="stq">Standard Quadruple</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox" style="margin-bottom: 10px;">
+                                        <input type="checkbox" class="custom-control-input" name="jenis_kamar[2]" value="std" id="std">
+                                        <label class="custom-control-label" for="std">Standard Double</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox" style="margin-bottom: 10px;">
+                                        <input type="checkbox" class="custom-control-input" name="jenis_kamar[3]" value="spd" id="spd">
+                                        <label class="custom-control-label" for="spd">Superior Double</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox" style="margin-bottom: 10px;">
+                                        <input type="checkbox" class="custom-control-input" name="jenis_kamar[4]" value="spdp" id="spdp">
+                                        <label class="custom-control-label" for="spdp">Superior Double Plus</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="custom-control custom-checkbox" style="margin-bottom: 10px;">
+                                        <input type="checkbox" class="custom-control-input" name="jenis_kamar[5]" value="spdk" id="spdk">
+                                        <label class="custom-control-label" for="spdk">Superior Double K</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox" style="margin-bottom: 10px;">
+                                        <input type="checkbox" class="custom-control-input" name="jenis_kamar[6]" value="spqk" id="spqk">
+                                        <label class="custom-control-label" for="spqk">Superior Quadruple K</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox" style="margin-bottom: 10px;">
+                                        <input type="checkbox" class="custom-control-input" name="jenis_kamar[7]" value="dibd" id="dibd">
+                                        <label class="custom-control-label" for="dibd">Deluxe Internasional Blok D</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox" style="margin-bottom: 10px;">
+                                        <input type="checkbox" class="custom-control-input" name="jenis_kamar[8]" value="dibj" id="dibj">
+                                        <label class="custom-control-label" for="dibj">Deluxe Internasional Blok J</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="namablok" class="d-block tx-14">Deskripsi</label>
+                                    <textarea class="form-control" rows="2" name="deskripsi" placeholder="Deskripsi Blok/Gedung"></textarea>
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mg-t-50" id="button_simpan" type="submit">&nbsp;Simpan&nbsp;</button>
+
+                            <!-- <button class="btn btn-secondary " type="cancel ">Cancel</button> -->
+                        </form>
+                    </div>
+
+                </div>
+
+                <script>
+                    $('#button_simpan').on('click', function() {
+                        // showLoader();
+                    });
+                </script>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+<script src="js/dashforge.js " type="text/javascript "></script>
+
+<script src="js/dashforge.filemgr.js " type="text/javascript "></script>
+
+<script src="lib/jquery/jquery.min.js " type="text/javascript "></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js " type="text/javascript "></script>
+<script src="lib/feather-icons/feather.min.js " type="text/javascript "></script>
+<script src="lib/perfect-scrollbar/perfect-scrollbar.min.js " type="text/javascript "></script>
+
+
+<!-- append theme customizer -->
+<script src="lib/js-cookie/js.cookie.js " type="text/javascript "></script>
+<script src="js/dashforge.settings.js " type="text/javascript "></script>
+
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js "></script>
+
+
+<script src="js/dashforge.aside.js " type="text/javascript "></script>
+
+</html>

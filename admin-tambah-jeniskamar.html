@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        ion-icon {
+            font-size: 20px;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="ThemePixels">
+
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <title>DashForge Responsive Bootstrap 4 Dashboard Template</title> -->
+
+    <!-- vendor css -->
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/dashforge.css" rel="stylesheet">
+    <link href="css/dashforge.filemgr.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title>Admin myITS Dorm</title>
+</head>
+
+<body>
+
+
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <div class="logo-myits aside-logo">
+                <a href="admin.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
+            </div>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+            <a href="" id="filemgrMenu" class="burger-menu d-lg-none"><i data-feather="arrow-left"></i></a>
+        </div>
+        <div class="aside-body">
+            <div class="aside-loggedin">
+                <div class="d-flex align-items-center justify-content-start">
+                    <a href="" class="avatar"><img src="assets/img/fotoprofile.png" class="rounded-circle" alt=""></a>
+                </div>
+                <div class="aside-loggedin-user">
+                    <a href="#loggedinMenu" class="d-flex align-items-center justify-content-between mg-b-2" data-toggle="collapse">
+                        <h6 class="tx-semibold mg-b-0">Rana Wijdan Naim</h6>
+                        <i data-feather="chevron-down"></i>
+                    </a>
+                    <p class="tx-color-03 tx-12 mg-b-0">Administrasiistrator</p>
+                </div>
+                <div class="collapse" id="loggedinMenu">
+                    <ul class="nav nav-aside mg-b-0">
+                        <li class="nav-item"><a href="" class="nav-link"><i data-feather="settings"></i> <span>Pengaturan Akun</span></a></li>
+                        <li class="nav-item"></li><a class="nav-link" href="#" aria-labelledby="keluar"><i data-feather="log-out"></i>Keluar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- aside-loggedin -->
+            <ul class="nav nav-aside">
+                <li class="nav-item" style="margin-bottom: 10px;">
+                    <a href="admin.html" class="nav-link">
+                        <ion-icon name="speedometer-outline"></ion-icon><span style="margin-left: 12px;">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item" style="margin-bottom: 10px;">
+                    <a href="admin-pengelolaanblok.html" class="nav-link">
+                        <ion-icon name="business-outline"></ion-icon><span style="margin-left: 12px;">Pengelolaan Blok</span>
+                    </a>
+                </li>
+                <li class="nav-item with-sub show active" style="margin-bottom: 10px;">
+                    <a href="" class="nav-link">
+                        <ion-icon name="bed-outline"></ion-icon><span style="margin-left: 12px;">Pengelolaan Kamar</span>
+                    </a>
+                    <ul>
+                        <li class="active"><a href="admin-jeniskamar.html">Jenis Kamar</a></li>
+                        <li><a href="admin-daftarkamar.html">Daftar Kamar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-pesanan.html" class="nav-link"><i data-feather="shopping-cart"></i> <span>Pesanan</span></a></li>
+
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-penghuni.html" class="nav-link"><i data-feather="users"></i> <span>Penghuni</span></a></li>
+                <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-laporan-pesanan.html" class="nav-link"><i data-feather="file-text"></i> <span>Laporan</span></a></li>
+
+            </ul>
+        </div>
+    </aside>
+    <div class="content ht-100v pd-0">
+        <!-- content-header -->
+        <div class="content-header">
+            <div class="content-search">
+                <i data-feather="search"></i>
+                <input type="search" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="admin-content">
+                <div>
+                    <div class="d-inline-flex">
+                        <a class="btn" href="admin-jeniskamar.html" id="button_kembali" role="button">
+                            <ion-icon name="arrow-back-outline" style="font-size: 30px; margin-left:0px"></ion-icon>
+                        </a>
+                        <p class="tx-24">Tambah Jenis Kamar</p>
+                    </div>
+                    <form method="post" action="admin-jeniskamar.html" data-parsley-validate enctype="multipart/form-data" enctype="multipart/form-data">
+                        <br>
+                        <fieldset class="form-fieldset active">
+                            <legend>Info Jenis Kamar</legend>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="namablok" class="d-block tx-14">Nama Jenis Kamar</label>
+                                    <input type="text" class="form-control" name="nama" placeholder="Contoh: Jenis Kamar Standar" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="jumlahkasur" class="d-block tx-14">Jumlah Kasur</label>
+                                    <select class="custom-select" name="isi_bed_kamar" required>
+                                        <option value="" disabled selected>Pilih Jumlah Kasur</option>
+                                        <option value="1">1 Kasur</option>
+                                        <option value="2">2 Kasur</option>
+                                        <option value="4">4 Kasur</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12 mg-t-15">
+                                    <label for="namablok" class="d-block tx-14">Deskripsi</label>
+                                    <textarea class="form-control" rows="2" name="deskripsi" placeholder="Deskripsi Jenis Kamar"></textarea>
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <br>
+                        <fieldset class="form-fieldset active">
+                            <legend>Fasilitas Utama</legend>
+                            <div class="form-row mg-b-15">
+                                <div class="form-group col-md-6">
+                                    <select class="custom-select" name="ac" required>
+                                        <option value="" disabled selected>Pilih Jenis AC</option>
+                                        <option value="AC">AC</option>
+                                        <option value="Non-AC">Non-AC</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <select class="custom-select" name="wifi" required>
+                                        <option value="" disabled selected>Pilih Jenis Wifi</option>
+                                        <option value="Wifi ruang bersama">Memiliki Wifi di Ruang Bersama</option>
+                                        <option value="Tidak memiliki wifi">Tidak Memiliki Wifi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row active">
+                                <div class="form-group col-md-6">
+                                    <select class="custom-select" name="jenis_km" id="jeniskm" required>
+                                        <option value="" disabled selected>Pilih Jenis Kamar Mandi</option>
+                                        <option value="Kamar Mandi Luar">Kamar Mandi Luar </option>
+                                        <option value="Kamar Mandi Dalam">Kamar Mandi Dalam</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <br>
+                        <fieldset class="form-fieldset active">
+                            <legend>Harga</legend>
+                            <div class="form-row ">
+                                <div class="form-group col-md-6">
+                                    <label for="hargaperbulan" class="tx-14">Harga per Bulan</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Rp</span>
+                                        </div>
+                                        <input type="number" class="form-control" name="harga" aria-label="Rupiah amount (with dot and two decimal places)">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-row" id="varian-harga-jeniskamar" style="display: none">
+                                <div class="form-group col-md-6">
+                                    <label for="tipevarianharga1">Tipe Varian Harga 1</label>
+                                    <select class="custom-select" name="tipevarianharga" id="tipevarianharga" required>
+                                        <option value="" disabled selected>Pilih Varian Harga</option>
+                                        <option value="hargaperlantai">Harga per Lantai</option>
+                                        <option value="bidikmisi">Khusus Bidik Misi</option>
+                                        <option value="satukamar">Pesan Satu Kamar</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="varianharga1">Harga per bulan</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Rp</span>
+                                        </div>
+                                        <input type="number" name="hargavarian" class="form-control" aria-label="Rupiah amount (with dot and two decimal places)">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <button type="button" class="btn btn-outline-primary" id="btn-tambah-varian-harga-jeniskamar">+ Tambah Varian Harga</button>
+                        </fieldset>
+                        <br>
+                        <fieldset class="form-fieldset active">
+                            <legend>Gambar</legend>
+                            <div class="title-subtitle mg-b-15">
+                                <p class="tx-gray-700 tx-14">Tambahkan Gambar</p>
+                                <p class="tx-gray-500 tx-10">Ukuran file maks. 5MB dengan format .jpg, .jpeg, .png</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="container">
+                                            <div id="preview" class="row">
+                                            </div>
+                                        </div>
+                                        <div class="dropzone-wrapper">
+                                            <div class="dropzone-desc">
+                                                <ion-icon name="add-circle"></ion-icon>
+                                            </div>
+                                            <input id='gambars' type="file" name="gambar[]" class="dropzone" multiple onchange="previewFiles()">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </fieldset>
+                        <button class="btn btn-primary" id="button_simpan" type="submit">&nbsp;Simpan&nbsp;</button>
+                    </form>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- </div> -->
+
+                </div>
+                <script>
+                    $('#btn-tambah-varian-harga-jeniskamar').on('click', function() {
+                        if ($('#varian-harga-jeniskamar').css('display') == 'none') {
+                            $('#varian-harga-jeniskamar').css('display', 'flex');
+                        } else {
+                            // $('#varian-harga-jeniskamar').css('display', 'none');
+                        }
+                    });
+
+                    $('#button_simpan').on('click', function() {
+                        // showLoader();
+                    });
+
+                    function reset(e) {
+                        e.wrap('<form>').closest('form').get(0).reset();
+                        e.unwrap();
+                    }
+
+                    function previewFiles() {
+
+                        $('#preview div').remove();
+
+                        var preview = document.querySelector('#preview');
+                        var files = document.querySelector('#gambars').files;
+
+                        var totalfiles = files.length;
+                        var imageSize = 0;
+                        for (var i = 0; i < totalfiles; i++) {
+                            imageSize += files[i].size;
+                        }
+                        console.log(parseFloat(imageSize / 1048576).toFixed(2) + ' mb');
+
+                        function readAndPreview(file) {
+
+                            // Make sure `file.name` matches our extensions criteria
+                            if (/\.(jpe?g|png|gif)$/i.test(file.name)) {
+                                var reader = new FileReader();
+
+                                reader.addEventListener("load", function() {
+                                    var htmlPreview = '<div class="col preview-zone box box-solid"><div class="center-cropped">\
+                                        <img width="150px" src="' + this.result + '" /></div>' +
+                                        '<div><p style="margin-top: 10px;">' + file.name + '</p></div></div>';
+                                    $('#preview').append(htmlPreview);
+                                }, false);
+
+                                reader.readAsDataURL(file);
+                            }
+
+                        }
+
+                        if (files) {
+                            [].forEach.call(files, readAndPreview);
+                        }
+
+                    }
+
+                    $('.dropzone-wrapper').on('dragover', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $(this).addClass('dragover');
+                    });
+
+                    $('.dropzone-wrapper').on('dragleave', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $(this).removeClass('dragover');
+                    });
+
+                    $('.remove-preview').on('click', function() {
+                        var boxZone = $(this).parents('.preview-zone').find('.box-body');
+                        var previewZone = $(this).parents('.preview-zone');
+                        var dropzone = $(this).parents('.form-group').find('.dropzone');
+                        boxZone.empty();
+                        previewZone.addClass('invisible');
+                        reset(dropzone);
+                    });
+                </script>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+<script src="js/dashforge.js" type="text/javascript"></script>
+
+<script src="js/dashforge.filemgr.js" type="text/javascript"></script>
+
+<script src="lib/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="lib/feather-icons/feather.min.js" type="text/javascript"></script>
+<script src="lib/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script>
+
+
+<!-- append theme customizer -->
+<script src="lib/js-cookie/js.cookie.js" type="text/javascript"></script>
+<script src="js/dashforge.settings.js" type="text/javascript"></script>
+
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+<script src="js/dashforge.aside.js" type="text/javascript"></script>
+
+</html>

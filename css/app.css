@@ -64,7 +64,7 @@
 }
 
 #button_simpan {
-    margin-top: 80px;
+    margin-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: auto;
@@ -1330,11 +1330,48 @@ label {
 }
 
 #card-chart {
+    border-radius: 10px !important;
     line-height: 15px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .card-laporan-tabel-pesanan {
+    border-radius: 10px !important;
     margin-top: 20px;
     padding: 20px;
+}
+
+.admin-content-2 {
+    margin-top: 15px;
+}
+
+.card-prosespesanan {
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.card-divider-prosespesanan {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    border-top: 3px solid #e3e7ed;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -3px;
+}
+
+.img-prosespesanan {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-konfirmasipesanan {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }

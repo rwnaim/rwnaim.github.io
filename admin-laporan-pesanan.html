@@ -93,7 +93,7 @@
                 <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-pesanan.html" class="nav-link"><i data-feather="shopping-cart"></i> <span>Pesanan</span></a></li>
 
                 <li class="nav-item" style="margin-bottom: 10px;"><a href="admin-penghuni.html" class="nav-link"><i data-feather="users"></i> <span>Penghuni</span></a></li>
-                <li class="nav-item active" style="margin-bottom: 10px;"><a href="admin-laporan.html" class="nav-link"><i data-feather="file-text"></i> <span>Laporan</span></a></li>
+                <li class="nav-item active" style="margin-bottom: 10px;"><a href="admin-laporan-pesanan.html" class="nav-link"><i data-feather="file-text"></i> <span>Laporan</span></a></li>
 
             </ul>
         </div>
@@ -108,18 +108,52 @@
         </div>
         <div class="container-fluid">
             <div class="admin-content">
-                <h3>Laporan</h3>
+                <div class="d-flex justify-content-between">
+                    <h3>Laporan</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select class="custom-select">
+                                <option value="januari">Januari</option>
+                                <option value="februari">Februari</option>
+                                <option value="maret">Maret</option>
+                                <option value="april" selected>April</option>
+                                <option value="mei">Mei</option>
+                                <option value="juni">Juni</option>
+                                <option value="juli">Juli</option>
+                                <option value="agustus">Agustus</option>
+                                <option value="september">September</option>
+                                <option value="oktober">Oktober</option>
+                                <option value="november">November</option>
+                                <option value="desember">Desember</option>
+                            </select>
+                        </div>
+                        <div class="form-group mg-l-10">
+                            <select class="custom-select">
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021" selected>2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
                 <ul class="nav nav-line" id="myTab" role="tablist" style="padding-bottom: 5px; margin-top: 10px;">
                     <li class="nav-item">
-                        <a class="nav-link active" href="admin-laporan.html">Pesanan</a>
+                        <a class="nav-link active" href="admin-laporan-pesanan.html">Pesanan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="admin-laporan-penghasilan.html">Penghasilan</a>
                     </li>
                 </ul>
                 <div class="mg-t-20">
-                    <div class="card card-crypto">
-                        <div class="card-body pd-10 pd-sm-20" id="card-chart">
+                    <div class="card card-crypto" id="card-chart">
+                        <div class="card-body pd-10 pd-sm-20">
                             <p>Jumlah pesanan per bulan</p>
                             <p class="tx-32 tx-medium mg-b-30">381</p>
                             <div class="chart-eleven">
@@ -178,301 +212,277 @@
                         <table class="table table-bordered border-dark">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th scope="col" style="width: 20px; text-align: center;">No.</th>
-                                    <th scope="col">Nama Penghuni</th>
-                                    <th scope="col">Informasi Kamar</th>
-                                    <th scope="col">Kontrak Sewa</th>
+                                    <th scope="col" style="max-width: 100px;">No.</th>
+                                    <th scope="col">No pemesanan</th>
+                                    <th scope="col">Tanggal Pemesanan</th>
+                                    <th scope="col">Nama Pemesan</th>
+                                    <th scope="col">Jenis Kamar</th>
+                                    <th scope="col">Status Pesanan</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;" data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
-                                    <td style="text-align: center;">
-                                        <p>1</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">1</td>
+                                    <td>
+                                        <p class="mg-b-2">#STQ2704202100123</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">27 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Deni Subekti Akbar</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok A - Standard Quadruple</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Belum diproses</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>2</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">2</td>
+                                    <td>
+                                        <p class="mg-b-2">#STD2704202100122</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">27 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Siti Sulistiawati</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok E - Standard Double</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Belum diproses</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>3</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">3</td>
+                                    <td>
+                                        <p class="mg-b-2">#SPD2704202100121</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">27 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Zidan Albert</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok G - Superior Double</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Menunggu Check In</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>4</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">4</td>
+                                    <td>
+                                        <p class="mg-b-2">#SDP2704202100120</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">27 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Andi Subakti</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok G - Superior Double Plus</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Selesai</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>5</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">5</td>
+                                    <td>
+                                        <p class="mg-b-2">#STD2604202100119</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">26 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Lisa Ana Larasati</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok E - Superior Double</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Selesai</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>6</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">6</td>
+                                    <td>
+                                        <p class="mg-b-2">#STQ2604202100118</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">26 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Tegar Sulaiman</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok A - Standard Quadruple</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Selesai</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>7</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">6</td>
+                                    <td>
+                                        <p class="mg-b-2">#STD2504202100117</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">25 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Abdi Lukman</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok C - Standard Double</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Selesai</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>8</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">7</td>
+                                    <td>
+                                        <p class="mg-b-2">#STD2504202100116</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">25 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Dandi Herlambang</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok C - Standard Double</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Selesai</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>9</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">8</td>
+                                    <td>
+                                        <p class="mg-b-2">#SPD2504202100115</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">25 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Sulaiman Iskandar</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok G - Superior Double</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Selesai</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>
                                 <!-- mulai card penghuni -->
-                                <tr style="font-size: 16px;">
-                                    <td style="text-align: center;">
-                                        <p>10</p>
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">9</td>
+                                    <td>
+                                        <p class="mg-b-2">#SPD2504202100114</p>
                                     </td>
                                     <td style="max-width: 400px">
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Deni Subekti Akbar</h5>
-                                            <p>Mahasiswa Lokal</p>
-                                        </div>
+                                        <p class="mg-b-2">25 April</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <h5 class="mg-b-2">Blok A - Standard Quadruple</h5>
-                                            <p>Kamar 203</p>
-                                        </div>
+                                        <p class="mg-b-2">Edward Sebastian</p>
                                     </td>
                                     <td>
-                                        <div class="media-body mg-t-15">
-                                            <p class="mg-b-2">6 Bulan</p>
-                                            <p>Sampai <span class="tx-medium">Oktober 2021</span> </p>
-                                        </div>
+                                        <p class="mg-b-2">Blok E - Superior Double</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Selesai</p>
                                     </td>
                                     <td>
                                         <div class="dropdown">
-                                            <button class="btn btn-outline-danger btn-sm" type="button"><i style="margin-right:5px;" data-feather="trash"></i>Hapus</button>
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- mulai card penghuni -->
+                                <tr data-href="" data-target=".bd-example-modal-xl" data-toggle="modal">
+                                    <td style="text-align:center;">10</td>
+                                    <td>
+                                        <p class="mg-b-2">#SDP2504202100113</p>
+                                    </td>
+                                    <td style="max-width: 400px">
+                                        <p class="mg-b-2">25 April</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Luwis Aleksander</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Blok E - Superior Double Plus</p>
+                                    </td>
+                                    <td>
+                                        <p class="mg-b-2">Selesai</p>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-primary btn-sm" type="button">Lihat Detail</button>
                                         </div>
                                     </td>
                                 </tr>

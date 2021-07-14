@@ -14093,8 +14093,8 @@ textarea.form-control {
 }
 
 .marker-primary {
-    color: #fff;
-    background-color: #013880;
+    color: #013880;
+    background-color: #D9E1EC;
 }
 
 .marker-primary.marker-icon::before {
@@ -14110,7 +14110,7 @@ textarea.form-control {
 }
 
 .marker-secondary {
-    color: #fff;
+    color: #939EAD;
 }
 
 .marker-secondary.marker-icon::before {
@@ -15830,8 +15830,8 @@ textarea.form-control {
     position: absolute;
     bottom: -2px;
     left: 0;
-    right: 0;
-    height: 2px;
+    right: 0px;
+    height: 4px;
     background-color: #013880;
 }
 
