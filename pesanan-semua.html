@@ -64,9 +64,10 @@
         <div class="container-fluid">
             <!-- <div class="container"> -->
             <div class="search-navbar d-flex">
+                <a href="jenis.html" class="kembali-mobile" style="display: none;"><i data-feather="arrow-left"></i></a>
                 <div class="logo-myits">
                     <!-- <a href="../../asrama.html" class="df-logo" style="padding-top: 0.33594rem; padding-bottom: 0.33594rem; margin-right: 1rem;">myITS<span>Asrama</span></a> -->
-                    <a href="peasrama.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
+                    <a href="asrama.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar"></a>
                 </div>
                 <form class="form-inline" action="cari-jeniskamar.html">
                     <div class="search-form" style="padding-bottom: 0.33594rem;">
@@ -108,7 +109,7 @@
                     <!-- dropdown-menu -->
                 </div>
                 <!-- dropdown -->
-                <div style="border-left:1.5px solid #BDBDBD;height:30px; margin-left:30px;"></div>
+                <div class="border-vertical" style="border-left:1.5px solid #BDBDBD;height:30px; margin-left:30px;"></div>
                 <div class="dropdown dropdown-profile">
                     <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
                         <div class="avatar avatar-sm"><img src="assets/img/fotoprofile.png" class="rounded-circle" alt=""></div>
@@ -152,8 +153,8 @@
 
 
     <div class="content-user">
-
         <div class="container-fluid">
+            <p class="tx-black-700 tx-24">Pesanan</p>
             <div class="card" id="card-pesanan">
                 <ul class="nav nav-line" id="myTab" role="tablist" style="padding-bottom: 5px;">
                     <li class="nav-item">
@@ -169,14 +170,38 @@
                         <a class="nav-link" href="pesanan-pesananselesai.html">Pesanan Selesai</a>
                     </li>
                 </ul>
+                <div style="display: none;" id="status-mobile">
+                    <h4>Pesanan</h4>
+                    <select class="custom-select" onchange="location = this.options[this.selectedIndex].value;">
+                        <option value="" selected>Semua status pesanan</option>
+                        <option value="pesanan-menunggupembayaran.html">Menunggu pembayaran</option>
+                        <option value="pesanan-menungguvalidasi.html">Menunggu pembayaran</option>
+                        <option value="pesanan-pesananselesai.html">Pesanan Selesai</option>
+                    </select>
+                </div>
                 <div class="tab-content" id="myTabContent">
                     <div class="card" id="card-isipesanan" style="margin-top: 20px;">
                         <div class="tab-pane fade show active">
-                            <div class="d-flex flex-row justify-content-between">
-                                <p id="header-card-isipesanan">Tanggal Pemesanan: <b>19 Maret 2021</b> <span class="badge badge-pill badge-warning" style="font-size: 14px; margin-left:10px; align-items:middle; ">Menunggu Validasi</span> </p>
-                                <p style="font-size: 18px;">#CH612190321013</p>
+                            <div class="headercard-pesanan-mobile" style="display: none;">
+                                <p style="margin-bottom: 20px; margin-top: -10px;">Nomor Pemesanan: <span style="font-size: 14px; color: #828282; ">#CH612190321013</span></p>
                             </div>
                             <div class="card-divider-pesanan"></div>
+                            <div class="flex-row justify-content-between headercard-pesanan-dekstop">
+                                <p id="header-card-isipesanan">Tanggal Pemesanan: <b>19 Maret 2021</b> <span class="badge badge-pill badge-warning badge-mobile" style="font-size: 14px; margin-left:10px; align-items:middle; ">Menunggu Validasi</span> </p>
+                                <p style="font-size: 18px;">#CH612190321013</p>
+                            </div>
+                            <div class="headercard-pesanan-mobile" style="display: none;">
+                                <div class="d-flex flex-row justify-content-between ">
+                                    <div id="header-pesanan">
+                                        <p class="tx-medium" id="header-card-isipesanan">Tanggal Pemesanan: </p>
+                                        <p>19 Maret 2021</p>
+                                    </div>
+                                    <div>
+                                        <span class="badge badge-pill badge-warning badge-mobile">Menunggu Validasi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="card-divider-pesanan"></div> -->
                             <div class="card-body" id="card-body-pesanan">
                                 <div class="row">
                                     <div class="col-sm">
@@ -193,14 +218,29 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="card-body body-pesanan-mobile" style="display: none;">
+                                <div class="d-flex flex-row justify-content-between">
+                                    <div>
+                                        <p class="tx-medium">Superior Double</p>
+                                        <p style="color: #828282">6 Bulan</p>
+                                    </div>
+                                    <div class="blok-lantai-mobile">
+                                        <p class="tx-medium">Blok B - Lantai 3</p>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card-divider-pesanan"></div>
                             <div id="card-footer-pesanan" class="d-flex flex-row justify-content-between align-items-start">
-                                <div class="d-flex flex-row align-items-center">
+                                <div class="d-flex flex-row align-items-center" id="total-pembayaran-dekstop">
                                     <p>Total Pembayaran:</p>
                                     <p style="font-size: 24px; margin-left:10px;">Rp 3.000.000</p>
                                 </div>
+                                <div class="flex-row align-items-center" id="total-pembayaran-mobile" style="display: none;">
+                                    <p>Total Pembayaran:</p>
+                                    <p class="tx-medium" style="font-size: 18px;">Rp 3.000.000</p>
+                                </div>
                                 <div>
-                                    <button class="btn btn-primary btn-lg" data-target=".bd-example-modal-xl" data-toggle="modal">&nbsp&nbsp Lihat Detail &nbsp&nbsp</button>
+                                    <button class="btn btn-primary btn-lg" data-target=".bd-example-modal-xl" data-toggle="modal">Lihat Detail</button>
                                 </div>
                                 <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">

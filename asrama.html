@@ -65,11 +65,11 @@
         <div class="container-fluid">
             <!-- <div class="container"> -->
             <div class="search-navbar d-flex">
-                <div class="logo-myits">
+                <div class="logo-myits ">
                     <!-- <a href="../../asrama.html" class="df-logo" style="padding-top: 0.33594rem; padding-bottom: 0.33594rem; margin-right: 1rem;">myITS<span>Asrama</span></a> -->
                     <a href="asrama.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
                 </div>
-                <form class="form-inline" action="cari-jeniskamar.html">
+                <form class="form-inline navbar-search" action="cari-jeniskamar.html">
                     <div class="search-form" style="padding-bottom: 0.33594rem;">
                         <input id="theBasics" type="search" class="form-control" placeholder="Cari Jenis Kamar">
                         <button class="btn" type="button"><i data-feather="search"></i></button>
@@ -100,7 +100,7 @@
                     <!-- dropdown-menu -->
                 </div>
                 <!-- dropdown -->
-                <div style="border-left:1.5px solid #BDBDBD;height:30px; margin-left:30px;"></div>
+                <div class="border-vertical" style="border-left:1.5px solid #BDBDBD;height:30px; margin-left:30px;"></div>
                 <div class="dropdown dropdown-profile">
                     <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
                         <div class="avatar avatar-sm"><img src="assets/img/fotoprofile.png" class="rounded-circle" alt=""></div>
@@ -149,7 +149,7 @@
         </ol>
 
         <div class="carousel-inner">
-            <div class="carousel-caption d-none d-md-block" data-inviewport="fade-left">
+            <div class="carousel-caption d-md-block" data-inviewport="fade-left">
                 <h1 style="color: #FFF; font-size:52px; margin-bottom:20px;">Asrama Mahasiswa ITS</h1>
                 <p style="font-size: 16px;">Merupakan fasilitas hunian sewa yang disediakan bagi mahasiswa untuk tinggal selama masa studi di ITS Surabaya. Di bawah pengelolaan Direktorat Kerjasama dan Pengelolaan Usaha, asrama didesain sebagai suatu wahana dalam mendukung proses
                     pengembangan diri dan pembangunan karakter pribadi mahasiswa. Berlokasi di dalam area kampus ITS Sukolilo dan didukung fasilitas yang memadai, menjadikan asrama mahasiswa adalah suatu pilihan kenyamanan dan keamanan dalam mengiringi
@@ -174,51 +174,53 @@
             <div class="layanan-asrama">
                 <p id="judul-layanan-asrama" data-inviewport="fade-in">Layanan Asrama</p>
                 <div class="d-flex flex-row">
-                    <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
-                            <img src="assets/img/laundry2.png" id="icon-layananasrama">
-                            <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Laundry</p>
-                            <p>Kamu bisa memesan laundry hanya dari kamarmu.</p>
+                    <div class="form-row">
+                        <div class="col-sm">
+                            <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
+                                <img src="assets/img/laundry2.png" id="icon-layananasrama">
+                                <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Laundry</p>
+                                <p>Kamu bisa memesan laundry hanya dari kamarmu.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
+                                <img src="assets/img/group.svg" id="icon-layananasrama">
+                                <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Aula Belajar</p>
+                                <p>Tempat para penghuni berlajar bersama.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
+                                <img src="assets/img/canteen.png" id="icon-layananasrama">
+                                <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Kantin</p>
+                                <p>Kamu bisa menikmati berbagai makanan yang murah dan lezat.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
+                                <img src="assets/img/bicycle.png" id="icon-layananasrama">
+                                <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Sewa Sepeda</p>
+                                <p>Kamu juga bisa menyewa sepeda yang disediakan oleh ITS.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
+                                <img src="assets/img/security.png" id="icon-layananasrama">
+                                <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Keamanan</p>
+                                <p>Asrama memiliki keamanan yang baik karena dijaga oleh tim keamanan asrama.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
-                            <img src="assets/img/group.svg" id="icon-layananasrama">
-                            <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Aula Belajar</p>
-                            <p>Tempat para penghuni berlajar bersama.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
-                            <img src="assets/img/canteen.png" id="icon-layananasrama">
-                            <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Kantin</p>
-                            <p>Kamu bisa menikmati berbagai makanan yang murah dan lezat.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
-                            <img src="assets/img/bicycle.png" id="icon-layananasrama">
-                            <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Sewa Sepeda</p>
-                            <p>Kamu juga bisa menyewa sepeda yang disediakan oleh ITS.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card tx-center" id="card-layananasrama" data-inviewport="fade-up">
-                            <img src="assets/img/security.png" id="icon-layananasrama">
-                            <p class="tx-16 tx-bold" style="margin-bottom: 5px;">Keamanan</p>
-                            <p>Asrama memiliki keamanan yang baik karena dijaga oleh tim keamanan asrama.</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <div class="layanan-asrama justify-content-center">
                 <p id="judul-layanan-asrama" style="margin-top: 100px;" data-inviewport="fade-in">Info Penting</p>
-                <div class="row tab-layanan">
-                    <div class="col-sm">
-                        <img id="gambar-ilustrasi" src="assets/img/nomorpenting.png" class="d-block" data-inviewport="fade-left">
+                <div class="form-row tab-layanan">
+                    <div class="col-sm" id="gambar-ilustrasi">
+                        <img src="assets/img/nomorpenting.png" class="d-block" data-inviewport="fade-left">
                     </div>
                     <div class="col-sm">
-
                         <div class="card" id="card-infopenting" data-inviewport="fade-right">
                             <p class="tx-18 mb-4">Laundry Asrama ITS</p>
                             <p>Waktu Pelayanan:</p>
@@ -237,7 +239,6 @@
                             <p>0856 7654 9876 (Sandika Pradana)</p>
                         </div>
                     </div>
-
                 </div>
 
             </div>
@@ -246,10 +247,10 @@
                 <!-- <p class="tx-18" style="text-align: center; margin-top: -25px; margin-bottom: 20px;">Asrama Mahasiswa ITS</p> -->
                 <div class="row tab-layanan">
                     <div class="col-sm">
-                        <div style="margin-right: 20px;" class="card" id="card-tentangkami" data-inviewport="fade-left">
-                            <div style="line-height: 5px;">
+                        <div class="card" id="card-tentangkami" data-inviewport="fade-left">
+                            <div>
                                 <p class="tx-18 mb-4">Kantor Asrama Mahasiswa ITS</p>
-                                <p>Jalan Teknik Elektro, Kampus ITS, Sukolilo, Surabaya, 60111</p>
+                                <p style="line-height: 20px;">Jalan Teknik Elektro, Kampus ITS, Sukolilo, Surabaya, 60111</p>
                                 <p>Waktu Pelayanan:</p>
                                 <p>Senin s/d Jumat)</p>
                                 <p>(08:00 - 16:00 WIB</p>
@@ -258,7 +259,7 @@
 
                     </div>
                     <div class="col-sm">
-                        <div style="margin-left: 20px;" class="card" id="card-tentangkami" data-inviewport="fade-right">
+                        <div style="margin-left: 20px;" class="card card-hubungikami" id="card-tentangkami" data-inviewport="fade-right">
                             <div>
                                 <p class="tx-18 mb-4">Hubungi Kami</p>
                                 <p style="margin-top: -5px;"><i data-feather="smartphone" style="width: 14px; margin-right: 10px;"></i>085648101073 (Kurnia Ardiyani)</p>

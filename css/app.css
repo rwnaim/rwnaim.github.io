@@ -264,7 +264,7 @@ select #jeniskm option[value="kmluar"] {
 
 #card-jeniskamar {
     max-width: 210px;
-    height: 380px;
+    height: 400px;
     border-radius: 10px;
     /* margin-left: 30px; */
 }
@@ -323,8 +323,12 @@ select #jeniskm option[value="kmluar"] {
         margin-bottom: 20px;
     }
     #card-jeniskamar {
-        max-width: 165px;
+        max-width: 170px;
         /* margin-right: 0; */
+        height: 400px;
+    }
+    #card-jeniskamar .card-text {
+        font-size: 14px;
     }
     #col-card-jeniskamar {
         margin-left: 5px;
@@ -1374,4 +1378,203 @@ label {
     margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
+}
+
+.headercard-pesanan-dekstop {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    #card-layananasrama {
+        margin-left: 25px;
+        border-radius: 10px;
+        padding: 22px;
+        width: 300px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    #gambar-ilustrasi {
+        display: none;
+    }
+    .layanan-asrama {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    [data-inviewport="fade-right"] {
+        transform: translateX(10px);
+        transition: 2s;
+        opacity: 0;
+    }
+    [data-inviewport="fade-right"].is-inViewport {
+        transform: translateX(0px);
+        /* transform: translate(2); */
+        opacity: 1;
+    }
+    [data-inviewport="fade-left"] {
+        transform: translateX(-10px);
+        transition: 2s;
+        opacity: 0;
+    }
+    [data-inviewport="fade-left"].is-inViewport {
+        transform: translateX(0px);
+        /* transform: translate(2); */
+        opacity: 1;
+    }
+    .card-hubungikami {
+        margin-left: auto !important;
+    }
+    #card-tentangkami {
+        height: 190px;
+        padding: 25px;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        /* margin-right: 40px; */
+    }
+    .dropdown-profile span {
+        display: none;
+    }
+    .dropdown-profile p {
+        display: none;
+    }
+    /* .navbar {
+        margin-right: -10px !important;
+    } */
+    .navbar-search {
+        display: none;
+    }
+    .navbar-right {
+        margin-right: -20px !important;
+    }
+    .carousel-item {
+        height: 500px;
+    }
+    .carousel-caption h1 {
+        font-size: 32px !important;
+    }
+    .carousel-caption p {
+        line-height: 1.5em;
+        height: 12em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+    .logo-navbar {
+        display: none !important;
+    }
+    .kembali-mobile {
+        display: block !important;
+        color: #333333;
+        margin-top: 12px;
+        margin-right: 8px;
+    }
+    .search-form {
+        max-width: 175px;
+        margin-top: 7px;
+    }
+    .col-jeniskamar-filter {
+        display: none;
+    }
+    .modalFilter {
+        display: block !important;
+        margin-bottom: 30px;
+    }
+    .content-user {
+        margin-top: 10px;
+    }
+    .col-jeniskamar-card {
+        /* display: flex; */
+        /* max-width: 500px; */
+        margin-bottom: 30px;
+        margin-left: 9px;
+    }
+    #myTab {
+        display: none;
+    }
+    #status-mobile {
+        margin-top: 10px;
+        display: block !important;
+    }
+    #status-mobile h4 {
+        margin-bottom: 20px;
+    }
+    #card-pesanan {
+        border: none;
+        padding: 0px;
+    }
+    .badge-mobile {
+        font-size: 12px !important;
+        margin-left: 0px !important;
+        margin-top: 8px;
+        align-items: middle;
+    }
+    .headercard-pesanan-mobile {
+        display: block !important;
+        margin-bottom: -15px;
+    }
+    .headercard-pesanan-dekstop {
+        display: none !important;
+    }
+    #header-card-isipesanan {
+        font-size: 14px;
+        color: black;
+    }
+    .headercard-pesanan-mobile #header-pesanan {
+        line-height: 5px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        color: #828282;
+    }
+    .body-pesanan-mobile {
+        display: block !important;
+    }
+    #card-body-pesanan {
+        display: none;
+    }
+    .body-pesanan-mobile {
+        margin-left: -15px !important;
+        line-height: 5px;
+    }
+    #total-pembayaran-dekstop {
+        display: none !important;
+    }
+    #total-pembayaran-mobile {
+        display: block !important;
+        line-height: 10px;
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    .blok-lantai-mobile {
+        margin-right: -14px;
+    }
+    .border-vertical {
+        margin-left: 15px !important;
+    }
+}
+
+.fasilitas-jenis-card {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.fasilitas-jenis-card-badge {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.fasilitas-jenis-card ion-icon {
+    font-size: 16px;
+    float: left;
+}
+
+.fasilitas-jenis-card img {
+    width: 16px;
+    height: auto;
+    float: left;
+}
+
+.fasilitas-jenis-card li {
+    padding-left: 10px;
+    padding-top: 1px
 }

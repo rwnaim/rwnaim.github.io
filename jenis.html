@@ -65,9 +65,10 @@
         <div class="container-fluid">
             <!-- <div class="container"> -->
             <div class="search-navbar d-flex">
+                <a href="asrama.html" class="kembali-mobile" style="display: none;"><i data-feather="arrow-left"></i></a>
                 <div class="logo-myits">
                     <!-- <a href="../../asrama.html" class="df-logo" style="padding-top: 0.33594rem; padding-bottom: 0.33594rem; margin-right: 1rem;">myITS<span>Asrama</span></a> -->
-                    <a href="asrama.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar d-block"></a>
+                    <a href="asrama.html"><img src="assets/img/myits-dorm-blue.png" class="logo-navbar"></a>
                 </div>
                 <form class="form-inline" action="cari-jeniskamar.html">
                     <div class="search-form" style="padding-bottom: 0.33594rem;">
@@ -100,7 +101,7 @@
                     <!-- dropdown-menu -->
                 </div>
                 <!-- dropdown -->
-                <div style="border-left:1.5px solid #BDBDBD;height:30px; margin-left:30px;"></div>
+                <div class="border-vertical" style="border-left:1.5px solid #BDBDBD;height:30px; margin-left:30px;"></div>
                 <div class="dropdown dropdown-profile">
                     <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
                         <div class="avatar avatar-sm"><img src="assets/img/fotoprofile.png" class="rounded-circle" alt=""></div>
@@ -147,6 +148,7 @@
             <div class="judul-halaman">
                 <p class="tx-black-700 tx-24">Pilih Jenis Kamar</p>
             </div>
+            <button class="btn btn-sm btn-outline-primary btn-block modalFilter" data-toggle="modal" data-target="#filterModal" style="display: none;"> <i data-feather="sliders"></i> Filter</button>
             <div class="row">
                 <div class="col-jeniskamar-filter">
                     <div class="card" id="section-card-user">
@@ -155,7 +157,6 @@
                             <div class="row row-filter">
                                 <label for="jeniskelamin" class="d-block">Jenis Penghuni</label>
                                 <select class="custom-select" name="jenis_penghuni">
-                                    <!-- <option value="" disabled selected>Pilih Jenis Penghuni</option> -->
                                     <option value="L" selected>Laki-laki</option>
                                     <option value="P">Perempuan</option>
                                 </select>
@@ -187,7 +188,56 @@
                             <div class="row row-filter">
                                 <a href="filter-jeniskamar.html" style="margin-top: 20px;" type="button" class="btn btn-primary btn-block">Terapkan Filter</a>
                             </div>
-
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card-body">
+                                    <div class="row row-filter">
+                                        <label for="jeniskelamin" class="d-block">Jenis Penghuni</label>
+                                        <select class="custom-select" name="jenis_penghuni">
+                                                <option value="L" selected>Laki-laki</option>
+                                                <option value="P">Perempuan</option>
+                                            </select>
+                                    </div>
+                                    <div class="row row-filter">
+                                        <label for="isi_kamar" class="d-block">Isi Kamar</label>
+                                        <select class="custom-select" name="isi_kamar">
+                                                <option value="" selected>Semua</option>
+                                                <option value="2orang">2 Orang</option>
+                                                <option value="4orang">4 Orang</option>
+                                            </select>
+                                    </div>
+                                    <div class="row row-filter">
+                                        <label for="kamar_mandi" class="d-block">Tipe Kamar Mandi</label>
+                                        <select class="custom-select" name="kamar_mandi">
+                                                <option value="" selected>Semua Kamar Mandi</option>
+                                                <option value="km_dalam">Kamar Mandi Dalam</option>
+                                                <option value="km_luar">Kamar Mandi Luar</option>
+                                            </select>
+                                    </div>
+                                    <div class="row row-filter">
+                                        <label for="ac" class="d-block">Jenis AC</label>
+                                        <select class="custom-select" name="ac">
+                                                <option value="" selected>Semua</option>
+                                                <option value="berac">Ber-AC</option>
+                                                <option value="nonac">Non-AC</option>
+                                            </select>
+                                    </div>
+                                    <div class="row row-filter">
+                                        <a href="filter-jeniskamar.html" style="margin-top: 20px;" type="button" class="btn btn-primary btn-block">Terapkan Filter</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,18 +246,18 @@
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
                                 <img src="assets/img/abcde.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Standard Quadruple</h5>
+                                <div class="card-body">
+                                    <h5>Standard Quadruple</h5>
                                     <!-- <p class="card-text">Some quick example text...</p> -->
                                     <div class="row">
                                         <div class="col-md-12" id="label-blok">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
+                                            <div class="fasilitas-jenis-card-badge">
                                                 <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok A
                                                 </span>
                                                 <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok B
                                                 </span>
-                                                <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok C
-                                                </span>
+                                                <!-- <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok C
+                                                </span> -->
                                                 <!-- <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok D
                                                 </span>
                                                 <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok E -->
@@ -215,29 +265,29 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <ion-icon name="bed-outline" style="font-size: 16px;" class="float-left"></ion-icon>
+                                                <li class="list-group">
                                                     4 Orang
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/internet.svg" class="float-left" width="16px" height="auto" alt="Responsive image">
+                                                <li class="list-group">
                                                     Wifi ruang bersama
                                                 </li>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Ac.svg" class="float-left" width="16px" height="auto" alt="Responsive image">
+                                                <li class="list-group">
                                                     Non-AC
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Bathtub.svg" class="float-left" width="16px" height="auto" alt="Responsive image">
+                                                <li class="list-group">
                                                     K. Mandi Luar
                                                 </li>
                                             </div>
@@ -254,12 +304,12 @@
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
                                 <img src="assets/img/abcde.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Standard Double</h5>
+                                <div class="card-body">
+                                    <h5>Standard Double</h5>
                                     <!-- <p class="card-text">Some quick example text...</p> -->
                                     <div class="row">
                                         <div class="col-md-12" id="label-blok">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
+                                            <div class="fasilitas-jenis-card-badge">
                                                 <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok B
                                                 </span>
                                                 <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok C
@@ -271,29 +321,29 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                                <li class="list-group">
                                                     2 Orang
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/internet.svg">
+                                                <li class="list-group">
                                                     Wifi ruang bersama
                                                 </li>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Ac.svg" class="float-left" width="16px" height="auto" alt="Responsive image">
+                                                <li class="list-group">
                                                     Non-AC
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Bathtub.svg" class="float-left" width="16px" height="auto" alt="Responsive image">
+                                                <li class="list-group">
                                                     K. Mandi Dalam
                                                 </li>
                                             </div>
@@ -311,12 +361,12 @@
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
                                 <img src="assets/img/ghij.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Superior Double</h5>
+                                <div class="card-body">
+                                    <h5>Superior Double</h5>
                                     <!-- <p class="card-text">Some quick example text...</p> -->
                                     <div class="row">
                                         <div class="col-md-12" id="label-blok">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
+                                            <div class="fasilitas-jenis-card-badge">
                                                 <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok G
                                                 </span>
                                                 <!-- <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok H
@@ -328,29 +378,29 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                                <li class="list-group">
                                                     2 Orang
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/internet.svg">
+                                                <li class="list-group">
                                                     Wifi ruang bersama
                                                 </li>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Ac.svg">
+                                                <li class="list-group">
                                                     Non-AC
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Bathtub.svg">
+                                                <li class="list-group">
                                                     K. Mandi Dalam
                                                 </li>
                                             </div>
@@ -370,12 +420,12 @@
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
                                 <img src="assets/img/asramaits_1.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Superior Double Plus</h5>
+                                <div class="card-body">
+                                    <h5>Superior Double Plus</h5>
                                     <!-- <p class="card-text">Some quick example text...</p> -->
                                     <div class="row">
                                         <div class="col-md-12" id="label-blok">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
+                                            <div class="fasilitas-jenis-card">
                                                 <!-- <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok G -->
                                                 </span>
                                                 <span class="badge badge-pill badge-primary" style="margin-bottom: 5px;">Blok H
@@ -387,29 +437,29 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                                <li class="list-group">
                                                     2 Orang
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/internet.svg">
+                                                <li class="list-group">
                                                     Wifi ruang bersama
                                                 </li>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Ac.svg">
+                                                <li class="list-group">
                                                     Ber-AC
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Bathtub.svg">
+                                                <li class="list-group">
                                                     K. Mandi Dalam
                                                 </li>
                                             </div>
@@ -426,34 +476,34 @@
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
                                 <img src="assets/img/k.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Superior Double K</h5>
+                                <div class="card-body">
+                                    <h5>Superior Double K</h5>
                                     <!-- <p class="card-text">Some quick example text...</p> -->
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                                <li class="list-group">
                                                     2 Orang
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/internet.svg">
+                                                <li class="list-group">
                                                     Wifi ruang bersama
                                                 </li>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Ac.svg">
+                                                <li class="list-group">
                                                     Non-AC
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Bathtub.svg">
+                                                <li class="list-group">
                                                     K. Mandi Dalam
                                                 </li>
                                             </div>
@@ -472,34 +522,34 @@
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
                                 <img src="assets/img/k.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Superior Quadruple K</h5>
+                                <div class="card-body">
+                                    <h5>Superior Quadruple K</h5>
                                     <!-- <p class="card-text">Some quick example text...</p> -->
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                                <li class="list-group">
                                                     4 Orang
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/internet.svg">
+                                                <li class="list-group">
                                                     Wifi ruang bersama
                                                 </li>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Ac.svg">
+                                                <li class="list-group">
                                                     Non-AC
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Bathtub.svg">
+                                                <li class="list-group">
                                                     K. Mandi Luar
                                                 </li>
                                             </div>
@@ -516,34 +566,34 @@
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
                                 <img src="assets/img/inter-D.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Deluxe Internasional Blok D</h5>
+                                <div class="card-body">
+                                    <h5>Deluxe Internasional Blok D</h5>
                                     <!-- <p class="card-text">Some quick example text...</p> -->
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                                <li class="list-group">
                                                     4 Orang
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/internet.svg">
+                                                <li class="list-group">
                                                     Wifi ruang bersama
                                                 </li>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Ac.svg">
+                                                <li class="list-group">
                                                     Ber-AC
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Bathtub.svg">
+                                                <li class="list-group">
                                                     K. Mandi Luar
                                                 </li>
                                             </div>
@@ -560,34 +610,34 @@
                         <div class="col-jeniskamar-card">
                             <div class="card" id="card-jeniskamar">
                                 <img src="assets/img/inter-J.png" class="card-img-top" alt="...">
-                                <div class="card-body" id="card-body-jeniskamar">
-                                    <h5 class="card-title">Deluxe Internasional Blok J</h5>
+                                <div class="card-body">
+                                    <h5>Deluxe Internasional Blok J</h5>
                                     <!-- <p class="card-text">Some quick example text...</p> -->
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <ion-icon name="bed-outline"></ion-icon>
+                                                <li class="list-group">
                                                     4 Orang
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/internet.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/internet.svg">
+                                                <li class="list-group">
                                                     Wifi ruang bersama
                                                 </li>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-2">
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Ac.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Ac.svg">
+                                                <li class="list-group">
                                                     Ber-AC
                                                 </li>
                                             </div>
-                                            <div style="font-size: 8px; margin-bottom:5px;">
-                                                <img src="icon/Bathtub.svg" class="float-left" width="14px" height="auto" alt="Responsive image">
-                                                <li class="list-group" style="padding-left: 10px; padding-top:2px">
+                                            <div class="fasilitas-jenis-card">
+                                                <img src="icon/Bathtub.svg">
+                                                <li class="list-group">
                                                     K. Mandi Luar
                                                 </li>
                                             </div>
@@ -602,50 +652,19 @@
                         </div>
                         <!--Card Jenis Kamar -->
                     </div>
-
-
-
-
                 </div>
-
             </div>
-            <!-- <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Jenis Kamar</th>
-                            <th scope="col">Isi Bed Kamar</th>
-                            <th scope="col">Jenis Kamar Mandi</th>
-                            <th scope="col">AC ?</th>
-                            <th scope="col">Harga</th>
-                            <th scope="col">Bloks</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach($kumpulan_card as $jenis)
-                        <tr>
-                            <td>{{$jenis->jenis_kamar}}</td>
-                            <td>{{$jenis->isi_bed_kamar}}</td>
-                            <td>{{$jenis->jenis_km}}</td>
-                            <td>{{$jenis->ac}}</td>
-                            <td>{{$jenis->harga}}</td>
-                            <td>
-                                @foreach($jenis->bloks as $blok)
-                                {{$blok->nama}} <br>
-                                @endforeach
-                            </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table> -->
         </div>
     </div>
+
 </body>
 <script>
+    $('.off-canvas-menu').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $(target).addClass('show');
+    });
+
     function changeElement() {
         $("#filter_btn").prop('disabled', false).removeClass('btn-disable').addClass('btn-primary');
     }
@@ -679,16 +698,16 @@
                 var content = '<div class="row">';
                 for (var i = 0; i < data.length; i++) {
                     content += '<div class="col-jeniskamar-card"> <div class="card" id="card-jeniskamar"> <img src="{{asset("assets/img/asramaits_1.png")}}" class="card-img-top" alt="...">';
-                    content += '<div class="card-body" id="card-body-jeniskamar"><h5 class="card-title">' + data[i].jenis_kamar + '</h5>';
-                    content += '<div class="row"> <div class="col-md-6"> <div style="font-size: 8px; margin-bottom:5px;"> <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>';
-                    content += '<li class="list-group" style="padding-left: 10px; padding-top:2px">' + data[i].isi_bed_kamar + '</li> </div>';
-                    content += '<div style="font-size: 8px; margin-bottom:5px;"> <img src="{{url("icon/internet.svg")}}" class="float-left" width="14px" height="auto" alt="Responsive image">'
-                    content += '<li class="list-group" style="padding-left: 10px; padding-top:2px">Wifi ruang bersama</li> </div>';
-                    content += '</div> <div class="col-md-6 mb-2"> <div style="font-size: 8px; margin-bottom:5px;">';
-                    content += '<img src="{{url("icon/Ac.svg")}}" class="float-left" width="14px" height="auto" alt="Responsive image">';
-                    content += '<li class="list-group" style="padding-left: 10px; padding-top:2px"> Kamar ' + data[i].ac + '</li> </div>';
-                    content += '<div style="font-size: 8px; margin-bottom:5px;"> <img src="{{url("icon/Bathtub.svg")}}" class="float-left" width="14px" height="auto" alt="Responsive image">';
-                    content += '<li class="list-group" style="padding-left: 10px; padding-top:2px">' + data[i].jenis_km + '</li> </div> </div> </div>';
+                    content += '<div class="card-body"  ><h5   >' + data[i].jenis_kamar + '</h5>';
+                    content += '<div class="row"> <div class="col-md-6"> <div class="fasilitas-jenis-card"> <ion-icon name="bed-outline" ></ion-icon>';
+                    content += '<li class="list-group"  >' + data[i].isi_bed_kamar + '</li> </div>';
+                    content += '<div class="fasilitas-jenis-card"> <img src="{{url("icon/internet.svg")}}"   >'
+                    content += '<li class="list-group"  >Wifi ruang bersama</li> </div>';
+                    content += '</div> <div class="col-md-6 mb-2"> <div class="fasilitas-jenis-card">';
+                    content += '<img src="{{url("icon/Ac.svg")}}"   >';
+                    content += '<li class="list-group"  > Kamar ' + data[i].ac + '</li> </div>';
+                    content += '<div class="fasilitas-jenis-card"> <img src="{{url("icon/Bathtub.svg")}}"   >';
+                    content += '<li class="list-group"  >' + data[i].jenis_km + '</li> </div> </div> </div>';
                     content += '<a href="{{url("/detail")}}/' + data[i].id + '" class="stretched-link"></a> <div class="card-divider"></div>';
                     content += '<p class="card-text tx-16">' + convertToRupiah(data[i].harga) + ' / bulan</p></div> </div> </div>';
                 }
@@ -734,16 +753,16 @@
                 var content = '<div class="row">';
                 for (var i = 0; i < data.length; i++) {
                     content += '<div class="col-jeniskamar-card"> <div class="card" id="card-jeniskamar"> <img src="{{asset("assets/img/asramaits_1.png")}}" class="card-img-top" alt="...">';
-                    content += '<div class="card-body" id="card-body-jeniskamar"><h5 class="card-title">' + data[i].jenis_kamar + '</h5>';
-                    content += '<div class="row"> <div class="col-md-6"> <div style="font-size: 8px; margin-bottom:5px;"> <ion-icon name="bed-outline" style="font-size: 14px;" class="float-left"></ion-icon>';
-                    content += '<li class="list-group" style="padding-left: 10px; padding-top:2px">' + data[i].isi_bed_kamar + '</li> </div>';
-                    content += '<div style="font-size: 8px; margin-bottom:5px;"> <img src="{{url("icon/internet.svg")}}" class="float-left" width="14px" height="auto" alt="Responsive image">'
-                    content += '<li class="list-group" style="padding-left: 10px; padding-top:2px">Wifi ruang bersama</li> </div>';
-                    content += '</div> <div class="col-md-6 mb-2"> <div style="font-size: 8px; margin-bottom:5px;">';
-                    content += '<img src="{{url("icon/Ac.svg")}}" class="float-left" width="14px" height="auto" alt="Responsive image">';
-                    content += '<li class="list-group" style="padding-left: 10px; padding-top:2px"> Kamar ' + data[i].ac + '</li> </div>';
-                    content += '<div style="font-size: 8px; margin-bottom:5px;"> <img src="{{url("icon/Bathtub.svg")}}" class="float-left" width="14px" height="auto" alt="Responsive image">';
-                    content += '<li class="list-group" style="padding-left: 10px; padding-top:2px">' + data[i].jenis_km + '</li> </div> </div> </div>';
+                    content += '<div class="card-body"  ><h5   >' + data[i].jenis_kamar + '</h5>';
+                    content += '<div class="row"> <div class="col-md-6"> <div class="fasilitas-jenis-card"> <ion-icon name="bed-outline" ></ion-icon>';
+                    content += '<li class="list-group"  >' + data[i].isi_bed_kamar + '</li> </div>';
+                    content += '<div class="fasilitas-jenis-card"> <img src="{{url("icon/internet.svg")}}"   >'
+                    content += '<li class="list-group"  >Wifi ruang bersama</li> </div>';
+                    content += '</div> <div class="col-md-6 mb-2"> <div class="fasilitas-jenis-card">';
+                    content += '<img src="{{url("icon/Ac.svg")}}"   >';
+                    content += '<li class="list-group"  > Kamar ' + data[i].ac + '</li> </div>';
+                    content += '<div class="fasilitas-jenis-card"> <img src="{{url("icon/Bathtub.svg")}}"   >';
+                    content += '<li class="list-group"  >' + data[i].jenis_km + '</li> </div> </div> </div>';
                     content += '<a href="{{url("/detail")}}/' + data[i].id + '" class="stretched-link"></a> <div class="card-divider"></div>';
                     content += '<p class="card-text tx-16">' + convertToRupiah(data[i].harga) + ' / bulan</p></div> </div> </div>';
                 }
