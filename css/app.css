@@ -1551,6 +1551,9 @@ label {
     .border-vertical {
         margin-left: 15px !important;
     }
+    .judul-pesanan {
+        display: none;
+    }
 }
 
 .fasilitas-jenis-card {
